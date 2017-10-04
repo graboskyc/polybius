@@ -16,6 +16,8 @@ Of note so far I found the following:
 * Looking at the current source code of the page and doing a diff against other pages on coinop, nothing stands out as a source code change on the page. I'm using the current state of the page, not waybackmachine caches as the site owner said word choice matters
 * I assumed that the "screnshot" image has been poured over at this point so I only did a cursory look. No metadata there, no stenography when viewing in a hex and text editor
 * the only spelling error on the page seems to be the "disappeard" so unlikely that theres a omitted or wrong characters used as a code
+* The genre of the game is listed as "abstract puzzle" - the genre "abstract" is only used on two other games. While often mentioned that polybius has similar gameplay to tempest, tempest is listed as a shooter, not a puzzle game. Hinting that this page is an "abstract puzzle" perhaps? ( https://www.google.com/search?as_q=genre+abstract&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=http%3A%2F%2Fwww.coinop.org&as_occt=any&safe=images&as_filetype=&as_rights= )
+* The update in 2009 spells the capital of Ukraine using the Ukranian translation (Kyiv) and not the standard from-Russian translation often used by Americans (Kiev)
 
 So I wrote some python code to start to analyze things. Nothing of use yet.
 
