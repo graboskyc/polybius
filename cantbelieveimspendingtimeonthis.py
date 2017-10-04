@@ -23,6 +23,9 @@ def printEvery(text, offset):
     
     print " ".join(r.String)
     print " ".join(r.Number)
+    print "\r\nREVERSED\r\n"
+    print " ".join(reversed(r.String))
+    print " ".join(reversed(r.Number))
 
 # remove certain characters inputted as a list from a string
 def replaceStr(text, removeChars):

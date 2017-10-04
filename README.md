@@ -14,6 +14,8 @@ Of note so far I found the following:
 * Using tools at http://rumkin.com/tools/cipher/cryptogram-solver.php for "disappeard" that yields "SIXTEENTHS" as a ROT cryptogram - possible wrong path but who knows
 * Using other tools at http://rumkin.com/tools/cipher/manipulate.php and pasting all text above the "quick update" and removing spaces, using a 10 character offset will make "disappeard" fit perfectly
 * Looking at the current source code of the page and doing a diff against other pages on coinop, nothing stands out as a source code change on the page. I'm using the current state of the page, not waybackmachine caches as the site owner said word choice matters
+* I assumed that the "screnshot" image has been poured over at this point so I only did a cursory look. No metadata there, no stenography when viewing in a hex and text editor
+* the only spelling error on the page seems to be the "disappeard" so unlikely that theres a omitted or wrong characters used as a code
 
 So I wrote some python code to start to analyze things. Nothing of use yet.
 
