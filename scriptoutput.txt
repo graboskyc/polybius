@@ -1,421 +1,639 @@
+graboskyc@Gaming:/mnt/c/Users/chris/Documents/GitHub/polybius$ python cantbelieveimspendingtimeonthis.py
 +-------------------------------+
+|TEST ONE: every nth character
 |Using Offset of: 16
 +-------------------------------+
                 +-------------------------------+
-                |Original String
+                |Original String, offset 16
                 +-------------------------------+
-T  v  e     e  f  h  g  t  i  s  w  d     l  h  r  t  r  s  i  y  o  d  o  u  f  h  i  e     g  e     ,  e  c  p  a  n
-s     e  c  m  e     a  u  f  h     m  k  s  i  z  h  e  a  r  m  n  u  i  c  w     a  r     e  u
-20 22 5  -64 5  6  8  7  20 9  19 23 4  -64 12 8  18 20 18 19 9  25 15 4  15 21 6  8  9  5  -64 7  5  -64 -52 5  3  16 1
-  14 19 -64 5  3  13 5  -64 1  21 6  8  -64 13 11 19 9  26 8  5  1  18 13 14 21 9  3  23 -64 1  18 -64 5  21
+
+STRAIGHT FORWARD
+
+T  v  e     e  f  h  g  t  i  s  w  d     l  h  r  t  r  s  i  y  o  d  o  u  f  h  i  e     g  e     ,  e  c  p  a  n  s     e  c  m  e     a  u  f
+20 22 5  -64 5  6  8  7  20 9  19 23 4  -64 12 8  18 20 18 19 9  25 15 4  15 21 6  8  9  5  -64 7  5  -64 -52 5  3  16 1  14 19 -64 5  3  13 5  -64 1
 
 REVERSED
 
-u  e     r  a     w  c  i  u  n  m  r  a  e  h  z  i  s  k  m     h  f  u  a     e  m  c  e     s  n  a  p  c  e  ,
-e  g     e  i  h  f  u  o  d  o  y  i  s  r  t  r  h  l     d  w  s  i  t  g  h  f  e     e  v  T
-21 5  -64 18 1  -64 23 3  9  21 14 13 18 1  5  8  26 9  19 11 13 -64 8  6  21 1  -64 5  13 3  5  -64 19 14 1  16 3  5  -
-52 -64 5  7  -64 5  9  8  6  21 15 4  15 25 9  19 18 20 18 8  12 -64 4  23 19 9  20 7  8  6  5  -64 5  22 20
+u  e     r  a     w  c  i  u  n  m  r  a  e  h  z  i  s  k  m     h  f  u  a     e  m  c  e     s  n  a  p  c  e  ,     e  g     e  i  h  f  u  o  d
+21 5  -64 18 1  -64 23 3  9  21 14 13 18 1  5  8  26 9  19 11 13 -64 8  6  21 1  -64 5  13 3  5  -64 19 14 1  16 3  5  -52 -64 5  7  -64 5  9  8  6  2
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 2 0 1 0 1 3 2 0 4 4 3 4 1 2 3 3 0 3 4 4 0 0 4 0 1 1 3 4 0 1 2 0 1 3 0 3 1 1 4 4 1 0 3 3 0 1 1 1 1 3 1 3 1 4 4 1 3 0 1 3 3 4 1 4 3 3 1 1 3 1 0 1
+1 0 1 3 1 1 3 3 4 1 4 3 3 1 0 3 1 4 4 1 3 1 3 1 1 1 1 0 3 3 0 1 4 4 1 1 3 0 3 1 0 2 1 0 4 3 1 1 0 4 0 0 4 4 3 0 3 3 2 1 4 3 4 4 0 2 3 1 0 1 0 2 0
+
+VAL FROM POLY SQUARE
+
+L F F O V U K S D Y E V F R E M F D I W K Q D G G I I Z R F T K U I R B
+B R I U K T F R Z I I G G D Q K W I D F M E R F V E Y D S K U V O F F L
 
 
 
                 +-------------------------------+
-                |Cutting whitespace
+                |Cutting whitespace, offset 16
                 +-------------------------------+
-T  l  n  a  o  s  s  e  g  w  g  a  e  w  t  o  a  o  y  m  h  m  a  i  s  C  i  k  m  b  c  t  e  a  c  c  f  T  s  a
-t  a  g  e  k  a  t  e  l  a  l  m  a  e  a  o  i  s  n  v  m
-20 12 14 1  15 19 19 5  7  23 7  1  5  23 20 15 1  15 25 13 8  13 1  9  19 3  9  11 13 2  3  20 5  1  3  3  6  20 19 1
-20 1  7  5  11 1  20 5  12 1  12 13 1  5  1  15 9  19 14 22 13
+
+STRAIGHT FORWARD
+
+T  l  n  a  o  s  s  e  g  w  g  a  e  w  t  o  a  o  y  m  h  m  a  i  s  C  i  k  m  b  c  t  e  a  c  c  f  T  s  a  t  a  g  e  k  a  t  e  l  a
+20 12 14 1  15 19 19 5  7  23 7  1  5  23 20 15 1  15 25 13 8  13 1  9  19 3  9  11 13 2  3  20 5  1  3  3  6  20 19 1  20 1  7  5  11 1  20 5  12 1
 
 REVERSED
 
-m  v  n  s  i  o  a  e  a  m  l  a  l  e  t  a  k  e  g  a  t  a  s  T  f  c  c  a  e  t  c  b  m  k  i  C  s  i  a  m
-h  m  y  o  a  o  t  w  e  a  g  w  g  e  s  s  o  a  n  l  T
-13 22 14 19 9  15 1  5  1  13 12 1  12 5  20 1  11 5  7  1  20 1  19 20 6  3  3  1  5  20 3  2  13 11 9  3  19 9  1  13
-8  13 25 15 1  15 20 23 5  1  7  23 7  5  19 19 15 1  14 12 20
+m  v  n  s  i  o  a  e  a  m  l  a  l  e  t  a  k  e  g  a  t  a  s  T  f  c  c  a  e  t  c  b  m  k  i  C  s  i  a  m  h  m  y  o  a  o  t  w  e  a
+13 22 14 19 9  15 1  5  1  13 12 1  12 5  20 1  11 5  7  1  20 1  19 20 6  3  3  1  5  20 3  2  13 11 9  3  19 9  1  13 8  13 25 15 1  15 20 23 5  1
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 2 4 1 0 4 4 0 2 3 2 1 0 3 0 0 1 0 0 3 3 3 1 4 4 3 4 1 3 2 3 0 0 1 3 3 1 0 4 1 0 1 2 0 1 1 0 0 2 1 2 3 1 0 1 0 4 4 4 2 3
+3 2 4 4 4 0 1 0 1 3 2 1 2 0 0 1 1 0 2 1 0 1 4 0 1 3 3 1 0 0 3 2 3 1 4 3 4 4 1 3 3 3 0 0 1 0 0 3 0 1 2 3 2 0 4 4 0 1 4 2 0
+
+VAL FROM POLY SQUARE
+
+L K V E S H Q A B Q T W U K O D F T B K F C G A H S B B Z P
+P Z B B S H A G C F K B T F D O K U W T Q B A Q H S E V K L
 
 
 
                 +-------------------------------+
-                |Removing commas
+                |Removing commas, offset 16
                 +-------------------------------+
-T  l  e  r  f  t  c  l  s  i  t  d  e  r  h  b  h  l  e  t  g  d  h  o  l  s  p  n  v  t  t  a  e  s  l  r  a  o  a  t
-d  t  a  e  f  i  e  w  e  t  e  e  s  o  n  l  d  m  e  h
-20 12 5  18 6  20 3  12 19 9  20 4  5  18 8  2  8  12 5  20 7  4  8  15 12 19 16 14 22 20 20 1  5  19 12 18 1  15 1  20
-4  20 1  5  6  9  5  23 5  20 5  5  19 15 14 12 4  13 5  8
+
+STRAIGHT FORWARD
+
+T  l  e  r  f  t  c  l  s  i  t  d  e  r  h  b  h  l  e  t  g  d  h  o  l  s  p  n  v  t  t  a  e  s  l  r  a  o  a  t  d  t  a  e  f  i  e  w  e  t
+20 12 5  18 6  20 3  12 19 9  20 4  5  18 8  2  8  12 5  20 7  4  8  15 12 19 16 14 22 20 20 1  5  19 12 18 1  15 1  20 4  20 1  5  6  9  5  23 5  20
 
 REVERSED
 
-h  e  m  d  l  n  o  s  e  e  t  e  w  e  i  f  e  a  t  d  t  a  o  a  r  l  s  e  a  t  t  v  n  p  s  l  o  h  d  g
-t  e  l  h  b  h  r  e  d  t  i  s  l  c  t  f  r  e  l  T
-8  5  13 4  12 14 15 19 5  5  20 5  23 5  9  6  5  1  20 4  20 1  15 1  18 12 19 5  1  20 20 22 14 16 19 12 15 8  4  7
-20 5  12 8  2  8  18 5  4  20 9  19 12 3  20 6  18 5  12 20
+h  e  m  d  l  n  o  s  e  e  t  e  w  e  i  f  e  a  t  d  t  a  o  a  r  l  s  e  a  t  t  v  n  p  s  l  o  h  d  g  t  e  l  h  b  h  r  e  d  t
+8  5  13 4  12 14 15 19 5  5  20 5  23 5  9  6  5  1  20 4  20 1  15 1  18 12 19 5  1  20 20 22 14 16 19 12 15 8  4  7  20 5  12 8  2  8  18 5  4  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 2 0 3 1 0 3 2 4 4 0 4 0 3 3 2 3 2 0 0 2 4 3 0 2 4 1 4 2 0 0 1 0 4 2 3 1 0 1 0 4 0 1 0 1 4 0 3 0 0 0 0 4 0 4 2 4 3 0 3
+3 0 3 4 2 4 0 4 0 0 0 0 3 0 4 1 0 1 0 4 0 1 0 1 3 2 4 0 1 0 0 2 4 1 4 2 0 3 4 2 0 0 2 3 2 3 3 0 4 0 4 4 2 3 0 1 3 0 2 0
+
+VAL FROM POLY SQUARE
+
+L Q B O Z V Q O O A X D X W C F V S B B E B W Q A A E P U Q
+Q U P E A A Q W B E B B S V F C W X D X A O O Q V Z O B Q L
 
 
 
                 +-------------------------------+
-                |Removing periods
+                |Removing periods, offset 16
                 +-------------------------------+
-T  l  e  r  f  o  l  l  t  d  a  s  r  e  b  u  t  d  i  r  o  f  v  a  p  m  a  g  n  a  n  n  t  b  o  o  i  t  r  j
-o  t  T  o  r  t  e  a  y  y  a  e  h  e  t  h  e  r  e  i
-20 12 5  18 6  15 12 12 20 4  1  19 18 5  2  21 20 4  9  18 15 6  22 1  16 13 1  7  14 1  14 14 20 2  15 15 9  20 18 10
-15 20 20 15 18 20 5  1  25 25 1  5  8  5  20 8  5  18 5  9
+
+STRAIGHT FORWARD
+
+T  l  e  r  f  o  l  l  t  d  a  s  r  e  b  u  t  d  i  r  o  f  v  a  p  m  a  g  n  a  n  n  t  b  o  o  i  t  r  j  o  t  T  o  r  t  e  a  y  y
+20 12 5  18 6  15 12 12 20 4  1  19 18 5  2  21 20 4  9  18 15 6  22 1  16 13 1  7  14 1  14 14 20 2  15 15 9  20 18 10 15 20 20 15 18 20 5  1  25 25
 
 REVERSED
 
-i  e  r  e  h  t  e  h  e  a  y  y  a  e  t  r  o  T  t  o  j  r  t  i  o  o  b  t  n  n  a  n  g  a  m  p  a  v  f  o
-r  i  d  t  u  b  e  r  s  a  d  t  l  l  o  f  r  e  l  T
-9  5  18 5  8  20 5  8  5  1  25 25 1  5  20 18 15 20 20 15 10 18 20 9  15 15 2  20 14 14 1  14 7  1  13 16 1  22 6  15
-18 9  4  20 21 2  5  18 19 1  4  20 12 12 15 6  18 5  12 20
+i  e  r  e  h  t  e  h  e  a  y  y  a  e  t  r  o  T  t  o  j  r  t  i  o  o  b  t  n  n  a  n  g  a  m  p  a  v  f  o  r  i  d  t  u  b  e  r  s  a
+9  5  18 5  8  20 5  8  5  1  25 25 1  5  20 18 15 20 20 15 10 18 20 9  15 15 2  20 14 14 1  14 7  1  13 16 1  22 6  15 18 9  4  20 21 2  5  18 19 1
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 2 0 3 1 0 2 2 0 4 1 4 3 0 2 1 0 4 4 3 0 1 2 1 1 3 1 2 4 1 4 4 0 2 0 0 4 0 3 0 0 0 0 0 3 0 0 1 0 0 1 0 3 0 0 3 0 3 0 4
+4 0 3 0 3 0 0 3 0 1 0 0 1 0 0 3 0 0 0 0 0 3 0 4 0 0 2 0 4 4 1 4 2 1 3 1 1 2 1 0 3 4 4 0 1 2 0 3 4 1 4 0 2 2 0 1 3 0 2 0
+
+VAL FROM POLY SQUARE
+
+L Q B N V W D H V U F H R M K Z L A E D A A D F A B D Q Q V
+V Q Q D B A F D A A D E A L Z K M R H F U V H D W V N B Q L
 
 
 
                 +-------------------------------+
-                |Removing quotes
+                |Removing quotes, offset 16
                 +-------------------------------+
-T  l  e  r  f  o  l  l  t  d  a  s  t  t  i  t  i  e  n  y  u  p  i  l  e  e  y  h  g  r  o  a  h  l  m  d  s  s  a  c
-t  a  a  n  f  m  t  i  g  o  a  s  W  p  n  h  f  d  b
-20 12 5  18 6  15 12 12 20 4  1  19 20 20 9  20 9  5  14 25 21 16 9  12 5  5  25 8  7  18 15 1  8  12 13 4  19 19 1  3
-20 1  1  14 6  13 20 9  7  15 1  19 23 16 14 8  6  4  2
+
+STRAIGHT FORWARD
+
+T  l  e  r  f  o  l  l  t  d  a  s  t  t  i  t  i  e  n  y  u  p  i  l  e  e  y  h  g  r  o  a  h  l  m  d  s  s  a  c  t  a  a  n  f  m  t  i  g  o
+20 12 5  18 6  15 12 12 20 4  1  19 20 20 9  20 9  5  14 25 21 16 9  12 5  5  25 8  7  18 15 1  8  12 13 4  19 19 1  3  20 1  1  14 6  13 20 9  7  15
 
 REVERSED
 
-b  d  f  h  n  p  W  s  a  o  g  i  t  m  f  n  a  a  t  c  a  s  s  d  m  l  h  a  o  r  g  h  y  e  e  l  i  p  u  y
-n  e  i  t  i  t  t  s  a  d  t  l  l  o  f  r  e  l  T
-2  4  6  8  14 16 23 19 1  15 7  9  20 13 6  14 1  1  20 3  1  19 19 4  13 12 8  1  15 18 7  8  25 5  5  12 9  16 21 25
-14 5  9  20 9  20 20 19 1  4  20 12 12 15 6  18 5  12 20
+b  d  f  h  n  p  W  s  a  o  g  i  t  m  f  n  a  a  t  c  a  s  s  d  m  l  h  a  o  r  g  h  y  e  e  l  i  p  u  y  n  e  i  t  i  t  t  s  a  d
+2  4  6  8  14 16 23 19 1  15 7  9  20 13 6  14 1  1  20 3  1  19 19 4  13 12 8  1  15 18 7  8  25 5  5  12 9  16 21 25 14 5  9  20 9  20 20 19 1  4
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 2 0 3 1 0 2 2 0 4 1 4 0 0 4 0 4 0 4 0 1 1 4 2 0 0 0 3 2 3 0 1 3 2 3 4 4 4 1 3 0 1 1 4 1 3 0 4 2 0 1 4 3 1 4 3 1 4 2
+2 4 1 3 4 1 3 4 1 0 2 4 0 3 1 4 1 1 0 3 1 4 4 4 3 2 3 1 0 3 2 3 0 0 0 2 4 1 1 0 4 0 4 0 4 0 0 4 1 4 0 2 2 0 1 3 0 2 0
+
+VAL FROM POLY SQUARE
+
+L Q B N V W A E E E G P A Q S F O Y Z R F W R V C W I U W
+W U I W C V R W F R Z Y O F S Q A P G E E E A W V N B Q L
 
 
 
                 +-------------------------------+
-                |Removing colons
+                |Removing colons, offset 16
                 +-------------------------------+
-T  l  e  r  f  o  l  l  t  d  a  s  t  t  i  t  i  e  n  y  u  p  i  l  e  e  y  h  g  r  o  a  h  l  m  d  s  s  a  c
-t  a  a  n  f  m  t  i  g  o  a  s  W  p  n  h  f  d  b
-20 12 5  18 6  15 12 12 20 4  1  19 20 20 9  20 9  5  14 25 21 16 9  12 5  5  25 8  7  18 15 1  8  12 13 4  19 19 1  3
-20 1  1  14 6  13 20 9  7  15 1  19 23 16 14 8  6  4  2
+
+STRAIGHT FORWARD
+
+T  l  e  r  f  o  l  l  t  d  a  s  t  t  i  t  i  e  n  y  u  p  i  l  e  e  y  h  g  r  o  a  h  l  m  d  s  s  a  c  t  a  a  n  f  m  t  i  g  o
+20 12 5  18 6  15 12 12 20 4  1  19 20 20 9  20 9  5  14 25 21 16 9  12 5  5  25 8  7  18 15 1  8  12 13 4  19 19 1  3  20 1  1  14 6  13 20 9  7  15
 
 REVERSED
 
-b  d  f  h  n  p  W  s  a  o  g  i  t  m  f  n  a  a  t  c  a  s  s  d  m  l  h  a  o  r  g  h  y  e  e  l  i  p  u  y
-n  e  i  t  i  t  t  s  a  d  t  l  l  o  f  r  e  l  T
-2  4  6  8  14 16 23 19 1  15 7  9  20 13 6  14 1  1  20 3  1  19 19 4  13 12 8  1  15 18 7  8  25 5  5  12 9  16 21 25
-14 5  9  20 9  20 20 19 1  4  20 12 12 15 6  18 5  12 20
+b  d  f  h  n  p  W  s  a  o  g  i  t  m  f  n  a  a  t  c  a  s  s  d  m  l  h  a  o  r  g  h  y  e  e  l  i  p  u  y  n  e  i  t  i  t  t  s  a  d
+2  4  6  8  14 16 23 19 1  15 7  9  20 13 6  14 1  1  20 3  1  19 19 4  13 12 8  1  15 18 7  8  25 5  5  12 9  16 21 25 14 5  9  20 9  20 20 19 1  4
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 2 0 3 1 0 2 2 0 4 1 4 0 0 4 0 4 0 4 0 1 1 4 2 0 0 0 3 2 3 0 1 3 2 3 4 4 4 1 3 0 1 1 4 1 3 0 4 2 0 1 4 3 1 4 3 1 4 2
+2 4 1 3 4 1 3 4 1 0 2 4 0 3 1 4 1 1 0 3 1 4 4 4 3 2 3 1 0 3 2 3 0 0 0 2 4 1 1 0 4 0 4 0 4 0 0 4 1 4 0 2 2 0 1 3 0 2 0
+
+VAL FROM POLY SQUARE
+
+L Q B N V W A E E E G P A Q S F O Y Z R F W R V C W I U W
+W U I W C V R W F R Z Y O F S Q A P G E E E A W V N B Q L
 
 
 
 +-------------------------------+
+|TEST ONE: every nth character
 |Using Offset of: 10
 +-------------------------------+
                 +-------------------------------+
-                |Original String
+                |Original String, offset 10
                 +-------------------------------+
-T  h     e  e  a  r  a  f  .  o  s  c  e  l  f  s  o  d  y     f     r  h  o  h     b  m        i  p  v        m  e  o
-u  k  o  b  o  n  m  e     m  i  a  k  i  m  n  e  e  d     w     t  t  s     t  o  l  r  t  e  e  r  q  r  ,  t  d  i
-h  m  y  g  e  n  f  ,  i  o        w     d  g  r  o  c     o  a  m  e  c  e  m  n  m  h  p  e        e  b  a
-20 8  -64 5  5  1  18 1  6  -50 15 19 3  5  12 6  19 15 4  25 -64 6  -64 18 8  15 8  -64 2  13 -64 -64 9  16 22 -64 -64
-13 5  15 21 11 15 2  15 14 13 5  -64 13 9  1  11 9  13 14 5  5  4  -64 23 -64 20 20 19 -64 20 15 12 18 20 5  5  18 17 18
- -52 20 4  9  8  13 25 7  5  14 6  -52 9  15 -64 -64 23 -64 4  7  18 15 3  -64 15 1  13 5  3  5  13 14 13 8  16 5  -64 -
-64 5  2  1
+
+STRAIGHT FORWARD
+
+T  h     e  e  a  r  a  f  .  o  s  c  e  l  f  s  o  d  y     f     r  h  o  h     b  m        i  p  v        m  e  o  u  k  o  b  o  n  m  e     m
+     w     d  g  r  o  c     o  a  m  e  c  e  m  n  m  h  p  e        e  b  a
+20 8  -64 5  5  1  18 1  6  -50 15 19 3  5  12 6  19 15 4  25 -64 6  -64 18 8  15 8  -64 2  13 -64 -64 9  16 22 -64 -64 13 5  15 21 11 15 2  15 14 13
+ 6  -52 9  15 -64 -64 23 -64 4  7  18 15 3  -64 15 1  13 5  3  5  13 14 13 8  16 5  -64 -64 5  2  1
 
 REVERSED
 
-a  b  e        e  p  h  m  n  m  e  c  e  m  a  o     c  o  r  g  d     w        o  i  ,  f  n  e  g  y  m  h  i  d  t
-,  r  q  r  e  e  t  r  l  o  t     s  t  t     w     d  e  e  n  m  i  k  a  i  m     e  m  n  o  b  o  k  u  o  e  m
-      v  p  i        m  b     h  o  h  r     f     y  d  o  s  f  l  e  c  s  o  .  f  a  r  a  e  e     h  T
-1  2  5  -64 -64 5  16 8  13 14 13 5  3  5  13 1  15 -64 3  15 18 7  4  -64 23 -64 -64 15 9  -52 6  14 5  7  25 13 8  9
- 4  20 -52 18 17 18 5  5  20 18 12 15 20 -64 19 20 20 -64 23 -64 4  5  5  14 13 9  11 1  9  13 -64 5  13 14 15 2  15 11
-21 15 5  13 -64 -64 22 16 9  -64 -64 13 2  -64 8  15 8  18 -64 6  -64 25 4  15 19 6  12 5  3  19 15 -50 6  1  18 1  5  5
-  -64 8  20
+a  b  e        e  p  h  m  n  m  e  c  e  m  a  o     c  o  r  g  d     w        o  i  ,  f  n  e  g  y  m  h  i  d  t  ,  r  q  r  e  e  t  r  l  o
+  o  h  r     f     y  d  o  s  f  l  e  c  s  o  .  f  a  r  a  e  e     h  T
+1  2  5  -64 -64 5  16 8  13 14 13 5  3  5  13 1  15 -64 3  15 18 7  4  -64 23 -64 -64 15 9  -52 6  14 5  7  25 13 8  9  4  20 -52 18 17 18 5  5  20 1
+4 -64 13 2  -64 8  15 8  18 -64 6  -64 25 4  15 19 6  12 5  3  19 15 -50 6  1  18 1  5  5  -64 8  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 3 1 0 0 1 3 1 1 0 0 4 3 0 2 1 4 0 4 0 1 1 1 3 3 0 3 1 2 3 1 1 4 1 2 1 1 3 0 0 1 1 0 2 0 4 3 0 1 3 4 1 1 4 3 4 0 0 4 1 3 1 0 0 4 1 0 0 2 3 0 0 0 3 2
+1 2 0 1 1 0 1 3 3 4 3 0 3 0 3 1 0 1 3 0 3 2 4 1 3 1 1 0 4 3 1 4 0 2 0 3 3 4 4 0 3 3 2 3 0 0 0 3 2 0 0 1 4 0 0 1 3 1 4 0 0 4 3 4 1 1 4 3 1 0 3 4 0 2 0
+
+VAL FROM POLY SQUARE
+
+Q B F I B V D H E E G R D I S G K H R A G L V D R K W Y A K I A K A S A Q S D Z T L V R E G I P D I F D D Y T B G L
+L G B T Y D D F I D P I G E R V L T Z D S Q A S A K A I K A Y W K R D V L G A R H K G S I D R G E E H D V B I F B Q
 
 
 
                 +-------------------------------+
-                |Cutting whitespace
+                |Cutting whitespace, offset 10
                 +-------------------------------+
-T  d  t  ,  a  c  b  l  s  s  u  e  s  s  u  h  g  a  ,  e  i  e  e  b  o  i  h  p  v  o  e  r  h  u  n  e  i  a  i  o
-C  h  h  w  g  n  o  h  c  n  h  a  o  e  l  o  c  c  t  s  o  e  r  n  t  i  n  h  l  a  d  i  a  t  m  e  k  y  e  a
-l  e  i  o  d  h  c  n  o  d  h  d  a  h  o  r  m
-20 4  20 -52 1  3  2  12 19 19 21 5  19 19 21 8  7  1  -52 5  9  5  5  2  15 9  8  16 22 15 5  18 8  21 14 5  9  1  9  1
-5 3  8  8  23 7  14 15 8  3  14 8  1  15 5  12 15 3  3  20 19 15 5  18 14 20 9  14 8  12 1  4  9  1  20 13 5  11 25 5  1
-  12 5  9  15 4  8  3  14 15 4  8  4  1  8  15 18 13
+
+STRAIGHT FORWARD
+
+T  d  t  ,  a  c  b  l  s  s  u  e  s  s  u  h  g  a  ,  e  i  e  e  b  o  i  h  p  v  o  e  r  h  u  n  e  i  a  i  o  C  h  h  w  g  n  o  h  c  n
+  d  a  h  o  r  m
+20 4  20 -52 1  3  2  12 19 19 21 5  19 19 21 8  7  1  -52 5  9  5  5  2  15 9  8  16 22 15 5  18 8  21 14 5  9  1  9  15 3  8  8  23 7  14 15 8  3  1
+ 8  4  1  8  15 18 13
 
 REVERSED
 
-m  r  o  h  a  d  h  d  o  n  c  h  d  o  i  e  l  a  e  y  k  e  m  t  a  i  d  a  l  h  n  i  t  n  r  e  o  s  t  c
-c  o  l  e  o  a  h  n  c  h  o  n  g  w  h  h  C  o  i  a  i  e  n  u  h  r  e  o  v  p  h  i  o  b  e  e  i  e  ,  a
-g  h  u  s  s  e  u  s  s  l  b  c  a  ,  t  d  T
-13 18 15 8  1  4  8  4  15 14 3  8  4  15 9  5  12 1  5  25 11 5  13 20 1  9  4  1  12 8  14 9  20 14 18 5  15 19 20 3
-3  15 12 5  15 1  8  14 3  8  15 14 7  23 8  8  3  15 9  1  9  5  14 21 8  18 5  15 22 16 8  9  15 2  5  5  9  5  -52 1
- 7  8  21 19 19 5  21 19 19 12 2  3  1  -52 20 4  20
+m  r  o  h  a  d  h  d  o  n  c  h  d  o  i  e  l  a  e  y  k  e  m  t  a  i  d  a  l  h  n  i  t  n  r  e  o  s  t  c  c  o  l  e  o  a  h  n  c  h
+  c  a  ,  t  d  T
+13 18 15 8  1  4  8  4  15 14 3  8  4  15 9  5  12 1  5  25 11 5  13 20 1  9  4  1  12 8  14 9  20 14 18 5  15 19 20 3  3  15 12 5  15 1  8  14 3  8
+2  3  1  -52 20 4  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 4 0 3 1 3 2 2 4 4 1 0 4 4 1 3 2 1 3 0 4 0 0 2 0 4 3 1 2 0 0 3 3 1 4 0 4 1 4 0 3 3 3 3 2 4 0 3 3 4 3 1 0 0 2 0 3 3 0 4 0 0 3 4 0 4 4 3 2 1 4 4 1 0 3
+3 3 0 3 1 4 3 4 0 4 3 3 4 0 4 0 2 1 0 0 1 0 3 0 1 4 4 1 2 3 4 4 0 4 3 0 0 4 0 3 3 0 2 0 0 1 3 4 3 3 0 4 2 3 3 3 3 0 4 1 4 0 4 1 3 3 0 0 2 1 3 4 0 2 0
+
+VAL FROM POLY SQUARE
+
+V Q R N Z B Z R H D E L V I C Q I E K E T T X Q Y I A C T V A Y V U H Z B D B F C E U Y V Y R Q
+Q R Y V Y U E C F B D B Z H U V Y A V T C A I Y Q X T T E K E I Q C I V L E D H R Z B Z N R Q V
 
 
 
                 +-------------------------------+
-                |Removing commas
+                |Removing commas, offset 10
                 +-------------------------------+
-T  d  t  o  c  a  u  a  t  g  d  e  f  o  h  p  t  t  u  m  a  t  t  r  b  m  t  e  p  i  m  c  g  o  r  b  d  a  d  o
-s  i  e  a  e  n  n  .  t  o  a  o  g  n  s  t  r  o  n  e  s  t  h  s  d  o  t  p  g  r  i  a  i  e  m  d  d  p  e  o
-e  n  m  o  g  t  e  t  l  c  p  r  o  v  o  i
-20 4  20 15 3  1  21 1  20 7  4  5  6  15 8  16 20 20 21 13 1  20 20 18 2  13 20 5  16 9  13 3  7  15 18 2  4  1  4  15
-19 9  5  1  5  14 14 -50 20 15 1  15 7  14 19 20 18 15 14 5  19 20 8  19 4  15 20 16 7  18 9  1  9  5  13 4  4  16 5  15
- 5  14 13 15 7  20 5  20 12 3  16 18 15 22 15 9
+
+STRAIGHT FORWARD
+
+T  d  t  o  c  a  u  a  t  g  d  e  f  o  h  p  t  t  u  m  a  t  t  r  b  m  t  e  p  i  m  c  g  o  r  b  d  a  d  o  s  i  e  a  e  n  n  .  t  o
+  r  o  v  o  i
+20 4  20 15 3  1  21 1  20 7  4  5  6  15 8  16 20 20 21 13 1  20 20 18 2  13 20 5  16 9  13 3  7  15 18 2  4  1  4  15 19 9  5  1  5  14 14 -50 20 15
+16 18 15 22 15 9
 
 REVERSED
 
-i  o  v  o  r  p  c  l  t  e  t  g  o  m  n  e  o  e  p  d  d  m  e  i  a  i  r  g  p  t  o  d  s  h  t  s  e  n  o  r
-t  s  n  g  o  a  o  t  .  n  n  e  a  e  i  s  o  d  a  d  b  r  o  g  c  m  i  p  e  t  m  b  r  t  t  a  m  u  t  t
-p  h  o  f  e  d  g  t  a  u  a  c  o  t  d  T
-9  15 22 15 18 16 3  12 20 5  20 7  15 13 14 5  15 5  16 4  4  13 5  9  1  9  18 7  16 20 15 4  19 8  20 19 5  14 15 18
-20 19 14 7  15 1  15 20 -50 14 14 5  1  5  9  19 15 4  1  4  2  18 15 7  3  13 9  16 5  20 13 2  18 20 20 1  13 21 20 20
- 16 8  15 6  5  4  7  20 1  21 1  3  15 20 4  20
+i  o  v  o  r  p  c  l  t  e  t  g  o  m  n  e  o  e  p  d  d  m  e  i  a  i  r  g  p  t  o  d  s  h  t  s  e  n  o  r  t  s  n  g  o  a  o  t  .  n
+  c  o  t  d  T
+9  15 22 15 18 16 3  12 20 5  20 7  15 13 14 5  15 5  16 4  4  13 5  9  1  9  18 7  16 20 15 4  19 8  20 19 5  14 15 18 20 19 14 7  15 1  15 20 -50 14
+1  3  15 20 4  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 4 0 0 3 1 1 1 0 2 4 0 1 0 3 1 0 0 1 3 1 0 0 3 2 3 0 0 1 4 3 3 2 0 3 2 4 1 4 0 4 4 0 1 0 4 4 0 0 0 1 0 2 4 4 0 3 0 4 0 4 0 3 4 4 0 0 1 2 3 4 1 4 0 3
+4 0 2 0 3 1 3 2 0 0 0 2 0 3 4 0 0 0 1 4 4 3 0 4 1 4 3 2 1 0 0 4 4 3 0 4 0 4 0 3 0 4 4 2 0 1 0 0 0 4 4 0 1 0 4 4 0 4 1 4 2 3 0 2 3 3 4 1 0 0 3 2 3 0 0
+
+VAL FROM POLY SQUARE
+
+V A I G L E B I A R B Q S A W T C O K E Z F V E A B X E D E E Y E F S K E Y K A V D C A S R L V
+V L R S A C D V A K Y E K S F E Y E E D E X B A E V F Z E K O C T W A S Q B R A I B E L G I A V
 
 
 
                 +-------------------------------+
-                |Removing periods
+                |Removing periods, offset 10
                 +-------------------------------+
-T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  b  m  h  c  e  u  a  a  l  d  d  l  o  o  e  p  h  f  g  v  t
-m  s  i  n  m  h  g  c  n  h  a  o  e  a  u  o  o  h  T  i  i  o  t  l  o  o  a  e  a  k  a  s  t  l  t  p  o  n  i  t
-a  d  s  e  e  o  h  d  h  d  a  h  o  r  m
-20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 2  13 8  3  5  21 1  1  12 4  4  12 15 15 5  16 8  6  7  22 20
-13 19 9  14 13 8  7  3  14 8  1  15 5  1  21 15 15 8  20 9  9  15 20 12 15 15 1  5  1  11 1  19 20 12 20 16 15 14 9  20
-1  4  19 5  5  15 8  4  8  4  1  8  15 18 13
+
+STRAIGHT FORWARD
+
+T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  b  m  h  c  e  u  a  a  l  d  d  l  o  o  e  p  h  f  g  v  t  m  s  i  n  m  h  g  c  n  h
+  h  o  r  m
+20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 2  13 8  3  5  21 1  1  12 4  4  12 15 15 5  16 8  6  7  22 20 13 19 9  14 13 8  7  3  14 8
+  8  15 18 13
 
 REVERSED
 
-m  r  o  h  a  d  h  d  h  o  e  e  s  d  a  t  i  n  o  p  t  l  t  s  a  k  a  e  a  o  o  l  t  o  i  i  T  h  o  o
-u  a  e  o  a  h  n  c  g  h  m  n  i  s  m  t  v  g  f  h  p  e  o  o  l  d  d  l  a  a  u  e  c  h  m  b  l  e  a  l
-o  r  s  a  y  a  o  a  u  a  c  o  t  d  T
-13 18 15 8  1  4  8  4  8  15 5  5  19 4  1  20 9  14 15 16 20 12 20 19 1  11 1  5  1  15 15 12 20 15 9  9  20 8  15 15
-21 1  5  15 1  8  14 3  7  8  13 14 9  19 13 20 22 7  6  8  16 5  15 15 12 4  4  12 1  1  21 5  3  8  13 2  12 5  1  12
-15 18 19 1  25 1  15 1  21 1  3  15 20 4  20
+m  r  o  h  a  d  h  d  h  o  e  e  s  d  a  t  i  n  o  p  t  l  t  s  a  k  a  e  a  o  o  l  t  o  i  i  T  h  o  o  u  a  e  o  a  h  n  c  g  h
+  o  t  d  T
+13 18 15 8  1  4  8  4  8  15 5  5  19 4  1  20 9  14 15 16 20 12 20 19 1  11 1  5  1  15 15 12 20 15 9  9  20 8  15 15 21 1  5  15 1  8  14 3  7  8
+  15 20 4  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 4 0 0 3 1 1 1 0 1 0 1 4 3 0 2 1 0 2 2 3 3 3 0 1 1 1 2 4 4 2 0 0 0 1 3 1 2 2 0 3 4 4 4 3 3 2 3 4 3 1 0 0 1 1 0 0 3 0 4 4 0 0 2 0 0 1 0 1 1 1 4 0 2 0
+3 3 0 3 1 4 3 4 3 0 0 0 4 4 1 0 4 4 0 1 0 2 0 4 1 1 1 0 1 0 0 2 0 0 4 4 0 3 0 0 1 1 0 0 1 3 4 3 2 3 3 4 4 4 3 0 2 2 1 3 1 0 0 0 2 4 4 2 1 1 1 0 3 3 3
+
+VAL FROM POLY SQUARE
+
+V A I G F F U L B N T D G M Z C A R M C Y Z T S U B F B Q V E L A B G W L F V E W E A Y Y R Q
+Q R Y Y A E W E V F L W G B A L E V Q B F B U S T Z Y C M R A C Z M G D T N B L U F F G I A V
 
 
 
                 +-------------------------------+
-                |Removing quotes
+                |Removing quotes, offset 10
                 +-------------------------------+
-T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  e  e  e  T  r  t  r  s  y  b  o  i  f  u  k  r  a  i  o  e  h
-e  w  t  i  i  o  h  o  o  o  d  f  s  c  l  l  d  a  y  r  a  y  j  t  t  o  a  e  i  k  r  t  m  e  i  e  d  m  y  b
-a  a  r  n  a  r  h  a  h  p  a  a  e  u  n
-20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 5  5  5  20 18 20 18 19 25 2  15 9  6  21 11 18 1  9  15 5  8
-5  23 20 9  9  15 8  15 15 15 4  6  19 3  12 12 4  1  25 18 1  25 10 20 20 15 1  5  9  11 18 20 13 5  9  5  4  13 25 2
-1  1  18 14 1  18 8  1  8  16 1  1  5  21 14
+
+STRAIGHT FORWARD
+
+T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  e  e  e  T  r  t  r  s  y  b  o  i  f  u  k  r  a  i  o  e  h  e  w  t  i  i  o  h  o  o  o
+  a  e  u  n
+20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 5  5  5  20 18 20 18 19 25 2  15 9  6  21 11 18 1  9  15 5  8  5  23 20 9  9  15 8  15 15 15
+  1  5  21 14
 
 REVERSED
 
-n  u  e  a  a  p  h  a  h  r  a  n  r  a  a  b  y  m  d  e  i  e  m  t  r  k  i  e  a  o  t  t  j  y  a  r  y  a  d  l
-l  c  s  f  d  o  o  o  h  o  i  i  t  w  e  h  e  o  i  a  r  k  u  f  i  o  b  y  s  r  t  r  T  e  e  e  l  e  a  l
-o  r  s  a  y  a  o  a  u  a  c  o  t  d  T
-14 21 5  1  1  16 8  1  8  18 1  14 18 1  1  2  25 13 4  5  9  5  13 20 18 11 9  5  1  15 20 20 10 25 1  18 25 1  4  12
-12 3  19 6  4  15 15 15 8  15 9  9  20 23 5  8  5  15 9  1  18 11 21 6  9  15 2  25 19 18 20 18 20 5  5  5  12 5  1  12
-15 18 19 1  25 1  15 1  21 1  3  15 20 4  20
+n  u  e  a  a  p  h  a  h  r  a  n  r  a  a  b  y  m  d  e  i  e  m  t  r  k  i  e  a  o  t  t  j  y  a  r  y  a  d  l  l  c  s  f  d  o  o  o  h  o
+  o  t  d  T
+14 21 5  1  1  16 8  1  8  18 1  14 18 1  1  2  25 13 4  5  9  5  13 20 18 11 9  5  1  15 20 20 10 25 1  18 25 1  4  12 12 3  19 6  4  15 15 15 8  15
+  15 20 4  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 4 0 0 3 1 1 1 0 1 0 1 4 3 0 2 1 0 2 0 0 0 0 3 0 3 4 0 2 0 4 1 1 1 3 1 4 0 0 3 0 3 0 4 4 0 3 0 0 0 4 1 4 3 2 2 4 1 0 3 1 0 0 0 0 0 1 0 4 1 3 0 3 0 4
+4 1 0 1 1 1 3 1 3 3 1 4 3 1 1 2 0 3 4 0 4 0 3 0 3 1 4 0 1 0 0 0 0 0 1 3 0 1 4 2 2 3 4 1 4 0 0 0 3 0 4 4 0 3 0 3 0 0 4 1 3 1 1 1 4 0 2 0 4 3 0 3 0 0 0
+
+VAL FROM POLY SQUARE
+
+V A I G F F U L B C A Q Q E C K G I E Q Q V E D A K U N K Q B A A B K D D E U L G Y R I I G F
+F G I I R Y G L U E D D K B A A B Q K N U K A D E V Q Q E I G K C E Q Q A C B L U F F G I A V
 
 
 
                 +-------------------------------+
-                |Removing colons
+                |Removing colons, offset 10
                 +-------------------------------+
-T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  e  e  e  T  r  t  r  s  y  b  o  i  f  u  k  r  a  i  o  e  h
-e  w  t  i  i  o  h  o  o  o  d  f  s  c  l  l  d  a  y  r  a  y  j  t  t  o  a  e  i  k  r  t  m  e  i  e  d  m  y  b
-a  a  r  n  a  r  h  a  h  p  a  a  e  u  n
-20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 5  5  5  20 18 20 18 19 25 2  15 9  6  21 11 18 1  9  15 5  8
-5  23 20 9  9  15 8  15 15 15 4  6  19 3  12 12 4  1  25 18 1  25 10 20 20 15 1  5  9  11 18 20 13 5  9  5  4  13 25 2
-1  1  18 14 1  18 8  1  8  16 1  1  5  21 14
+
+STRAIGHT FORWARD
+
+T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  e  e  e  T  r  t  r  s  y  b  o  i  f  u  k  r  a  i  o  e  h  e  w  t  i  i  o  h  o  o  o
+  a  e  u  n
+20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 5  5  5  20 18 20 18 19 25 2  15 9  6  21 11 18 1  9  15 5  8  5  23 20 9  9  15 8  15 15 15
+  1  5  21 14
 
 REVERSED
 
-n  u  e  a  a  p  h  a  h  r  a  n  r  a  a  b  y  m  d  e  i  e  m  t  r  k  i  e  a  o  t  t  j  y  a  r  y  a  d  l
-l  c  s  f  d  o  o  o  h  o  i  i  t  w  e  h  e  o  i  a  r  k  u  f  i  o  b  y  s  r  t  r  T  e  e  e  l  e  a  l
-o  r  s  a  y  a  o  a  u  a  c  o  t  d  T
-14 21 5  1  1  16 8  1  8  18 1  14 18 1  1  2  25 13 4  5  9  5  13 20 18 11 9  5  1  15 20 20 10 25 1  18 25 1  4  12
-12 3  19 6  4  15 15 15 8  15 9  9  20 23 5  8  5  15 9  1  18 11 21 6  9  15 2  25 19 18 20 18 20 5  5  5  12 5  1  12
-15 18 19 1  25 1  15 1  21 1  3  15 20 4  20
+n  u  e  a  a  p  h  a  h  r  a  n  r  a  a  b  y  m  d  e  i  e  m  t  r  k  i  e  a  o  t  t  j  y  a  r  y  a  d  l  l  c  s  f  d  o  o  o  h  o
+  o  t  d  T
+14 21 5  1  1  16 8  1  8  18 1  14 18 1  1  2  25 13 4  5  9  5  13 20 18 11 9  5  1  15 20 20 10 25 1  18 25 1  4  12 12 3  19 6  4  15 15 15 8  15
+  15 20 4  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 4 0 0 3 1 1 1 0 1 0 1 4 3 0 2 1 0 2 0 0 0 0 3 0 3 4 0 2 0 4 1 1 1 3 1 4 0 0 3 0 3 0 4 4 0 3 0 0 0 4 1 4 3 2 2 4 1 0 3 1 0 0 0 0 0 1 0 4 1 3 0 3 0 4
+4 1 0 1 1 1 3 1 3 3 1 4 3 1 1 2 0 3 4 0 4 0 3 0 3 1 4 0 1 0 0 0 0 0 1 3 0 1 4 2 2 3 4 1 4 0 0 0 3 0 4 4 0 3 0 3 0 0 4 1 3 1 1 1 4 0 2 0 4 3 0 3 0 0 0
+
+VAL FROM POLY SQUARE
+
+V A I G F F U L B C A Q Q E C K G I E Q Q V E D A K U N K Q B A A B K D D E U L G Y R I I G F
+F G I I R Y G L U E D D K B A A B Q K N U K A D E V Q Q E I G K C E Q Q A C B L U F F G I A V
 
 
 
 +-------------------------------+
+|TEST ONE: every nth character
 |Using Offset of: 5
 +-------------------------------+
                 +-------------------------------+
-                |Original String
+                |Original String, offset 5
                 +-------------------------------+
-T  g  h        t  e  e  e  t  a  t  r  s  a  u  f  t  .     o  f  s  e  c  y  e  e  l  n  f  a  s  e  o  o  d  o  y  t
-   s  f  a     d  r  b  h  n  o  e  h  i
-  b  r  m  a           t  i  s  p  l  v  e           e  m  a  e  f  o  o  u  s  k  o  o  t  b  i  o  c  n  o  m  v  e  r
-     o  m  n  i  h  a  i  k     i  s  m     n  r  e  h  e  A  d  t     a  w  a     d  t  e  t     s  y     k  t  u  o  o
-  l  "  r  f  t  a  e  h  e     r  d  q  e  r  t  ,  y  t  l  d  o  i  b  h  h  m  s  y
-  g  w  e  l  n  i  f  t  ,  t  i  i  o  u     e     k  w  l     t  d  y  g     r     o  e  c  a        o     a  o  m  n
-  e  c  c  o  e     m  i  n     m  e  h     p  d  e  m     o     n  e  a  b  t  a  .
-20 7  8  -64 -64 20 5  5  5  20 1  20 18 19 1  21 6  20 -50 -64 15 6  19 5  3  25 5  5  12 14 6  1  19 5  15 15 4  15 25
- 20 -64 19 6  1  -64 4  18 2  8  14 15 5  8  9  -64 -86 2  18 13 1  -64 -64 -64 20 9  19 16 12 22 5  -64 -64 -64 5  13 1
-  5  6  15 15 21 19 11 15 15 20 2  9  15 3  14 15 13 22 5  18 -64 15 13 14 9  8  1  9  11 -64 9  19 13 -64 14 18 5  8  5
-  1  4  20 -64 1  23 1  -64 4  20 5  20 -64 19 25 -64 11 20 21 15 15 12 -62 18 6  20 1  5  8  5  -64 18 4  17 5  18 20 -
-52 25 20 12 4  15 9  2  8  8  13 19 25 -86 7  23 5  12 14 9  6  20 -52 20 9  9  15 21 -64 5  -64 11 23 12 -64 20 4  25 7
-  -64 18 -64 15 5  3  1  -64 -64 15 -64 1  15 13 14 5  3  3  15 5  -64 13 9  14 -64 13 5  8  -64 16 4  5  13 -64 15 -64
-14 5  1  2  20 1  -50
+
+STRAIGHT FORWARD
+
+T  g  h        t  e  e  e  t  a  t  r  s  a  u  f  t  .     o  f  s  e  c  y  e  e  l  n  f  a  s  e  o  o  d  o  y  t     s  f  a     d  r  b  h  n
+  b  r  m  a           t  i  s  p  l  v  e           e  m  a  e  f  o  o  u  s  k  o  o  t  b  i  o  c  n  o  m  v  e  r     o  m  n  i  h  a  i  k
+ r  d  q  e  r  t  ,  y  t  l  d  o  i  b  h  h  m  s  y
+  g  w  e  l  n  i  f  t  ,  t  i  i  o  u     e     k  w  l     t  d  y  g     r     o  e  c  a        o     a  o  m  n  e  c  c  o  e     m  i  n
+20 7  8  -64 -64 20 5  5  5  20 1  20 18 19 1  21 6  20 -50 -64 15 6  19 5  3  25 5  5  12 14 6  1  19 5  15 15 4  15 25 20 -64 19 6  1  -64 4  18 2
+ 2  9  15 3  14 15 13 22 5  18 -64 15 13 14 9  8  1  9  11 -64 9  19 13 -64 14 18 5  8  5  1  4  20 -64 1  23 1  -64 4  20 5  20 -64 19 25 -64 11 20 2
+  20 -52 20 9  9  15 21 -64 5  -64 11 23 12 -64 20 4  25 7  -64 18 -64 15 5  3  1  -64 -64 15 -64 1  15 13 14 5  3  3  15 5  -64 13 9  14 -64 13 5  8
 
 REVERSED
 
-.  a  t  b  a  e  n     o     m  e  d  p     h  e  m     n  i  m     e  o  c  c  e  n  m  o  a     o        a  c  e  o
-   r     g  y  d  t     l  w  k     e     u  o  i  i  t  ,  t  f  i  n  l  e  w  g
-  y  s  m  h  h  b  i  o  d  l  t  y  ,  t  r  e  q  d  r     e  h  e  a  t  f  r  "  l  o  o  u  t  k     y  s     t  e
-  t  d     a  w  a     t  d  A  e  h  e  r  n     m  s  i     k  i  a  h  i  n  m  o     r  e  v  m  o  n  c  o  i  b  t
-  o  o  k  s  u  o  o  f  e  a  m  e           e  v  l  p  s  i  t           a  m  r  b
-     i  h  e  o  n  h  b  r  d     a  f  s     t  y  o  d  o  o  e  s  a  f  n  l  e  e  y  c  e  s  f  o     .  t  f  u
-  a  s  r  t  a  t  e  e  e  t        h  g  T
--50 1  20 2  1  5  14 -64 15 -64 13 5  4  16 -64 8  5  13 -64 14 9  13 -64 5  15 3  3  5  14 13 15 1  -64 15 -64 -64 1
-3  5  15 -64 18 -64 7  25 4  20 -64 12 23 11 -64 5  -64 21 15 9  9  20 -52 20 6  9  14 12 5  23 7  -86 25 19 13 8  8  2
- 9  15 4  12 20 25 -52 20 18 5  17 4  18 -64 5  8  5  1  20 6  18 -62 12 15 15 21 20 11 -64 25 19 -64 20 5  20 4  -64 1
- 23 1  -64 20 4  1  5  8  5  18 14 -64 13 19 9  -64 11 9  1  8  9  14 13 15 -64 18 5  22 13 15 14 3  15 9  2  20 15 15 1
-1 19 21 15 15 6  5  1  13 5  -64 -64 -64 5  22 12 16 19 9  20 -64 -64 -64 1  13 18 2  -86 -64 9  8  5  15 14 8  2  18 4
- -64 1  6  19 -64 20 25 15 4  15 15 5  19 1  6  14 12 5  5  25 3  5  19 6  15 -64 -50 20 6  21 1  19 18 20 1  20 5  5  5
-  20 -64 -64 8  7  20
+.  a  t  b  a  e  n     o     m  e  d  p     h  e  m     n  i  m     e  o  c  c  e  n  m  o  a     o        a  c  e  o     r     g  y  d  t     l  w
+  y  s  m  h  h  b  i  o  d  l  t  y  ,  t  r  e  q  d  r     e  h  e  a  t  f  r  "  l  o  o  u  t  k     y  s     t  e  t  d     a  w  a     t  d  A
+ m  e           e  v  l  p  s  i  t           a  m  r  b
+     i  h  e  o  n  h  b  r  d     a  f  s     t  y  o  d  o  o  e  s  a  f  n  l  e  e  y  c  e  s  f  o     .  t  f  u  a  s  r  t  a  t  e  e  e  t
+-50 1  20 2  1  5  14 -64 15 -64 13 5  4  16 -64 8  5  13 -64 14 9  13 -64 5  15 3  3  5  14 13 15 1  -64 15 -64 -64 1  3  5  15 -64 18 -64 7  25 4  2
+ 17 4  18 -64 5  8  5  1  20 6  18 -62 12 15 15 21 20 11 -64 25 19 -64 20 5  20 4  -64 1  23 1  -64 20 4  1  5  8  5  18 14 -64 13 19 9  -64 11 9  1
+-64 -64 -64 1  13 18 2  -86 -64 9  8  5  15 14 8  2  18 4  -64 1  6  19 -64 20 25 15 4  15 15 5  19 1  6  14 12 5  5  25 3  5  19 6  15 -64 -50 20 6
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 2 3 1 1 0 0 0 0 0 1 0 3 4 1 1 1 0 0 1 0 1 4 0 3 0 0 0 2 4 1 1 4 0 0 0 4 0 0 0 1 4 1 1 1 4 3 2 3 4 0 0 3 4 1 4 2 3 3 1 1 1 1 0 4 4 1 2 2 0 1 1 1 0 3
+ 2 3 3 1 0 1 0 3 0 1 3 4 2 0 3 0 3 0 0 2 4 0 4 2 3 3 3 4 0 4 2 3 0 2 4 4 1 0 3 0 4 4 0 1 1 0 1 1 3 2 1 0 4 0 2 1 3 1 0 0 3 1 1 1 0 1 1 0 3 4 0 3 3 0 0
+0 1 0 2 1 0 4 1 0 1 3 0 4 1 1 3 0 3 1 4 4 3 1 0 0 3 3 0 4 3 0 1 1 0 1 1 1 3 0 0 1 3 1 2 0 4 0 1 2 3 1 1 0 1 1 0 4 4 0 3 0 1 4 4 2 0 3 2 4 0 4 3 3 3 2
+ 0 1 3 0 2 3 0 4 3 0 4 2 0 0 0 1 4 1 0 0 1 0 1 3 0 1 1 1 0 2 2 1 4 4 0 1 1 1 1 3 3 2 4 1 4 3 0 0 4 3 2 3 4 1 1 1 4 1 0 0 0 4 0 0 0 4 1 1 4 2 0 0 0 3 0
+
+VAL FROM POLY SQUARE
+
+L I B A A B Y G B F F E D A X G E A E A W G W O Y A Y W S I G B Z M C G B I F A W B A X Q E O Q B Y U W G Z I U Q F E G I W A F E G F A S I F Q F Y C
+B C F W B Q W I D K Y F D Q Y B F G I A I H E B O G B F Z D B Z L S V Y T P E L D D C Y F Q F I S A F G E F A W I G E F Q U I Z G W U Y B Q O E Q X A
 
 
 
                 +-------------------------------+
-                |Cutting whitespace
+                |Cutting whitespace, offset 5
                 +-------------------------------+
-T  a  d  y  t  l  ,  r  a  t  c  i  b  f  l  T  s  o  s  i  u  h  e  l  s  r  s  e  u  k  h  y  g  n  a  w  ,  d  e  e
-i  e  e  e  e  c  b  r  o  o  i  e  h  w  p  d  v  e  o  n  e  i  r  h  h  r  u  o  n  r  e  b  i  d  a  a  i  d  o  o
-C  s  h  k  h  y  w  p  g  r  n  v  o  l  h  e  c  n  n  a  h  a  a  t  o  s  e  y  l  o  o  o  c  c  c  "  t  c  s  y
-o  e  e  u  r  n  n  e  t  e  i  m  n  t  h  e  l  .  a  s  d  i  i  a  a  a  t  i  m  z  e  s  k  h  y  s  e  y  a  n
-l  e  e  a  i  i  o  c  d  s  h  W  c  c  n  s  o  i  d  a  h  h  d  p  a  a  h  a  o  e  r  u  m  n
-20 1  4  25 20 12 -52 18 1  20 3  9  2  6  12 20 19 15 19 9  21 8  5  12 19 18 19 5  21 11 8  25 7  14 1  23 -52 4  5  5
-  9  5  5  5  5  3  2  18 15 15 9  5  8  23 16 4  22 5  15 14 5  9  18 8  8  18 21 15 14 18 5  2  9  4  1  1  9  4  15 1
-5 3  19 8  11 8  25 23 16 7  18 14 22 15 12 8  5  3  14 14 1  8  1  1  20 15 19 5  25 12 15 15 15 3  3  3  -62 20 3  19
-25 15 5  5  21 18 14 14 5  20 5  9  13 14 20 8  5  12 -50 1  19 4  9  9  1  1  1  20 9  13 26 5  19 11 8  25 19 5  25 1
- 14 12 5  5  1  9  9  15 3  4  19 8  23 3  3  14 19 15 9  4  1  8  8  4  16 1  1  8  1  15 5  18 21 13 14
+
+STRAIGHT FORWARD
+
+T  a  d  y  t  l  ,  r  a  t  c  i  b  f  l  T  s  o  s  i  u  h  e  l  s  r  s  e  u  k  h  y  g  n  a  w  ,  d  e  e  i  e  e  e  e  c  b  r  o  o
+  v  o  l  h  e  c  n  n  a  h  a  a  t  o  s  e  y  l  o  o  o  c  c  c  "  t  c  s  y  o  e  e  u  r  n  n  e  t  e  i  m  n  t  h  e  l  .  a  s  d
+ h  d  p  a  a  h  a  o  e  r  u  m  n
+20 1  4  25 20 12 -52 18 1  20 3  9  2  6  12 20 19 15 19 9  21 8  5  12 19 18 19 5  21 11 8  25 7  14 1  23 -52 4  5  5  9  5  5  5  5  3  2  18 15 1
+ 14 22 15 12 8  5  3  14 14 1  8  1  1  20 15 19 5  25 12 15 15 15 3  3  3  -62 20 3  19 25 15 5  5  21 18 14 14 5  20 5  9  13 14 20 8  5  12 -50 1
+  8  8  4  16 1  1  8  1  15 5  18 21 13 14
 
 REVERSED
 
-n  m  u  r  e  o  a  h  a  a  p  d  h  h  a  d  i  o  s  n  c  c  W  h  s  d  c  o  i  i  a  e  e  l  n  a  y  e  s  y
-h  k  s  e  z  m  i  t  a  a  a  i  i  d  s  a  .  l  e  h  t  n  m  i  e  t  e  n  n  r  u  e  e  o  y  s  c  t  "  c
-c  c  o  o  o  l  y  e  s  o  t  a  a  h  a  n  n  c  e  h  l  o  v  n  r  g  p  w  y  h  k  h  s  C  o  o  d  i  a  a
-d  i  b  e  r  n  o  u  r  h  h  r  i  e  n  o  e  v  d  p  w  h  e  i  o  o  r  b  c  e  e  e  e  i  e  e  d  ,  w  a
-n  g  y  h  k  u  e  s  r  s  l  e  h  u  i  s  o  s  T  l  f  b  i  c  t  a  r  ,  l  t  y  d  a  T
-14 13 21 18 5  15 1  8  1  1  16 4  8  8  1  4  9  15 19 14 3  3  23 8  19 4  3  15 9  9  1  5  5  12 14 1  25 5  19 25
-8  11 19 5  26 13 9  20 1  1  1  9  9  4  19 1  -50 12 5  8  20 14 13 9  5  20 5  14 14 18 21 5  5  15 25 19 3  20 -62 3
-  3  3  15 15 15 12 25 5  19 15 20 1  1  8  1  14 14 3  5  8  12 15 22 14 18 7  16 23 25 8  11 8  19 3  15 15 4  9  1  1
-  4  9  2  5  18 14 15 21 18 8  8  18 9  5  14 15 5  22 4  16 23 8  5  9  15 15 18 2  3  5  5  5  5  9  5  5  4  -52 23
-1  14 7  25 8  11 21 5  19 18 19 12 5  8  21 9  19 15 19 20 12 6  2  9  3  20 1  18 -52 12 20 25 4  1  20
+n  m  u  r  e  o  a  h  a  a  p  d  h  h  a  d  i  o  s  n  c  c  W  h  s  d  c  o  i  i  a  e  e  l  n  a  y  e  s  y  h  k  s  e  z  m  i  t  a  a
+  a  a  h  a  n  n  c  e  h  l  o  v  n  r  g  p  w  y  h  k  h  s  C  o  o  d  i  a  a  d  i  b  e  r  n  o  u  r  h  h  r  i  e  n  o  e  v  d  p  w
+ b  i  c  t  a  r  ,  l  t  y  d  a  T
+14 13 21 18 5  15 1  8  1  1  16 4  8  8  1  4  9  15 19 14 3  3  23 8  19 4  3  15 9  9  1  5  5  12 14 1  25 5  19 25 8  11 19 5  26 13 9  20 1  1
+ 20 1  1  8  1  14 14 3  5  8  12 15 22 14 18 7  16 23 25 8  11 8  19 3  15 15 4  9  1  1  4  9  2  5  18 14 15 21 18 8  8  18 9  5  14 15 5  22 4  16
+ 6  2  9  3  20 1  18 -52 12 20 25 4  1  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 1 4 0 0 2 3 3 1 0 3 4 2 1 2 0 4 0 4 4 1 3 0 2 4 3 4 0 1 1 3 0 2 4 1 3 3 4 0 0 4 0 0 0 0 3 2 3 0 0 4 0 3 3 1 4 2 0 0 4 0 4 3 3 3 3 1 0 4 3 0 2 4 4 1
+ 2 0 1 4 4 4 4 1 1 1 0 4 3 1 0 4 1 3 0 4 0 0 1 4 2 0 0 1 4 4 0 3 4 4 3 3 3 3 4 4 0 4 4 1 3 3 4 1 1 1 3 1 0 0 3 1 3 4
+4 3 1 3 0 0 1 3 1 1 1 4 3 3 1 4 4 0 4 4 3 3 3 3 4 4 3 0 4 4 1 0 0 2 4 1 0 0 4 0 3 1 4 0 1 3 4 0 1 1 1 4 4 4 4 1 0 2 0 3 0 4 3 4 0 0 0 4 4 3 1 0 0 0 0
+ 0 2 4 1 3 3 0 4 0 0 3 2 3 0 0 0 0 4 0 0 4 3 3 1 4 2 0 3 1 1 0 4 3 4 2 0 3 1 4 4 0 4 0 2 1 2 4 3 0 1 3 3 2 0 0 4 1 0
+
+VAL FROM POLY SQUARE
+
+F E L T B Y H C E Z R L U E G D X R Y A E A Q S A E T W C V V T T B U L Z G Z A Y I D I S P L D Y K I B V A C A T T Q E A F Y E A U E D C W Z K G V I
+Y I A I G K T K V Z T T Z Q Z F C W A V R V I V G K Z W C D E U A E Y F A E Q T T A C A V B I K Y D L P S I D I Y A Z G Z L U B T T V V C W T E A S Q
 
 
 
                 +-------------------------------+
-                |Removing commas
+                |Removing commas, offset 5
                 +-------------------------------+
-T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  h  t  f  g  s  d  r  e  i  f  n  o  a  h  d  p  d  t  s  t  r  u  t  m  h
-a  w  t  i  t  e  r  m  b  h  m  t  t  u  e  e  p  s  i  w  m  a  c  s  g  u  o  n  r  e  b  i  d  a  a  i  d  o  o  C
-s  h  i  o  e  o  a  h  e  g  n  r  n  m  .  r  t  p  o  r  a  e  o  t  g  g  n  k  s  d  t  l  r  d  o  m  n  h  e  n
-s  n  t  r  h  h  s  l  d  r  o  u  t  m  p  d  g  a  r  k  i  a  a  s  i  t  e  l  m  t  d  p  d  o  p  n  e  i  o  t
-e  a  n  d  m  s  o  e  g  v  t  d  e  w  t  n  l  t  c  s  p  d  r  t  o  o  v  a  o  e  i
-20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  8  20 6  7  19 4  18 5  9  6  14 15 1  8  4  16 4  20 19 20 18 21 20 13 8
-1  23 20 9  20 5  18 13 2  8  13 20 20 21 5  5  16 19 9  23 13 1  3  19 7  21 15 14 18 5  2  9  4  1  1  9  4  15 15 3
-19 8  9  15 5  15 1  8  5  7  14 18 14 13 -50 18 20 16 15 18 1  5  15 20 7  7  14 11 19 4  20 12 18 4  15 13 14 8  5  14
- 19 14 20 18 8  8  19 12 4  18 15 21 20 13 16 4  7  1  18 11 9  1  1  19 9  20 5  12 13 20 4  16 4  15 16 14 5  9  15 20
- 5  1  14 4  13 19 15 5  7  22 20 4  5  23 20 14 12 20 3  19 16 4  18 20 15 15 22 1  15 5  9
+
+STRAIGHT FORWARD
+
+T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  h  t  f  g  s  d  r  e  i  f  n  o  a  h  d  p  d  t  s  t  r  u  t  m  h  a  w  t  i  t  e  r  m  b  h
+  r  n  m  .  r  t  p  o  r  a  e  o  t  g  g  n  k  s  d  t  l  r  d  o  m  n  h  e  n  s  n  t  r  h  h  s  l  d  r  o  u  t  m  p  d  g  a  r  k  i
+ d  r  t  o  o  v  a  o  e  i
+20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  8  20 6  7  19 4  18 5  9  6  14 15 1  8  4  16 4  20 19 20 18 21 20 13 8  1  23 20 9  20 5  18 13 2  8
+4 18 14 13 -50 18 20 16 15 18 1  5  15 20 7  7  14 11 19 4  20 12 18 4  15 13 14 8  5  14 19 14 20 18 8  8  19 12 4  18 15 21 20 13 16 4  7  1  18 11
+6 4  18 20 15 15 22 1  15 5  9
 
 REVERSED
 
-i  e  o  a  v  o  o  t  r  d  p  s  c  t  l  n  t  w  e  d  t  v  g  e  o  s  m  d  n  a  e  t  o  i  e  n  p  o  d  p
-d  t  m  l  e  t  i  s  a  a  i  k  r  a  g  d  p  m  t  u  o  r  d  l  s  h  h  r  t  n  s  n  e  h  n  m  o  d  r  l
-t  d  s  k  n  g  g  t  o  e  a  r  o  p  t  r  .  m  n  r  n  g  e  h  a  o  e  o  i  h  s  C  o  o  d  i  a  a  d  i
-b  e  r  n  o  u  g  s  c  a  m  w  i  s  p  e  e  u  t  t  m  h  b  m  r  e  t  i  t  w  a  h  m  t  u  r  t  s  t  d
-p  d  h  a  o  n  f  i  e  r  d  s  g  f  t  h  a  P  u  n  a  e  c  t  o  l  t  y  d  a  T
-9  5  15 1  22 15 15 20 18 4  16 19 3  20 12 14 20 23 5  4  20 22 7  5  15 19 13 4  14 1  5  20 15 9  5  14 16 15 4  16
-4  20 13 12 5  20 9  19 1  1  9  11 18 1  7  4  16 13 20 21 15 18 4  12 19 8  8  18 20 14 19 14 5  8  14 13 15 4  18 12
-20 4  19 11 14 7  7  20 15 5  1  18 15 16 20 18 -50 13 14 18 14 7  5  8  1  15 5  15 9  8  19 3  15 15 4  9  1  1  4  9
- 2  5  18 14 15 21 7  19 3  1  13 23 9  19 16 5  5  21 20 20 13 8  2  13 18 5  20 9  20 23 1  8  13 20 21 18 20 19 20 4
- 16 4  8  1  15 14 6  9  5  18 4  19 7  6  20 8  1  16 21 14 1  5  3  20 15 12 20 25 4  1  20
+i  e  o  a  v  o  o  t  r  d  p  s  c  t  l  n  t  w  e  d  t  v  g  e  o  s  m  d  n  a  e  t  o  i  e  n  p  o  d  p  d  t  m  l  e  t  i  s  a  a
+  r  o  p  t  r  .  m  n  r  n  g  e  h  a  o  e  o  i  h  s  C  o  o  d  i  a  a  d  i  b  e  r  n  o  u  g  s  c  a  m  w  i  s  p  e  e  u  t  t  m
+ e  c  t  o  l  t  y  d  a  T
+9  5  15 1  22 15 15 20 18 4  16 19 3  20 12 14 20 23 5  4  20 22 7  5  15 19 13 4  14 1  5  20 15 9  5  14 16 15 4  16 4  20 13 12 5  20 9  19 1  1
+  18 15 16 20 18 -50 13 14 18 14 7  5  8  1  15 5  15 9  8  19 3  15 15 4  9  1  1  4  9  2  5  18 14 15 21 7  19 3  1  13 23 9  19 16 5  5  21 20 20
+  5  3  20 15 12 20 25 4  1  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 1 4 0 0 2 0 0 3 0 1 4 1 1 1 3 0 1 2 4 4 3 0 4 1 4 0 1 3 4 1 4 0 4 0 3 1 0 3 3 1 3 0 4 0 0 3 3 2 3 3 0 0 1 0 0 1 4 4 3 3 1 3 4 2 1 0 4 3 0 2 4 4 1 1
+ 2 1 3 1 4 1 1 4 4 0 0 2 3 0 4 1 4 0 1 4 0 4 0 0 0 1 4 4 3 4 0 0 2 2 0 4 0 3 0 4 2 0 3 4 1 4 3 0 0 0 2 1 0 0 4
+4 0 0 1 2 0 0 0 3 4 1 4 3 0 2 4 0 3 0 4 0 2 2 0 0 4 3 4 4 1 0 0 0 4 0 4 1 0 4 1 4 0 3 2 0 0 4 4 1 1 4 1 3 1 2 4 1 3 0 1 0 3 4 2 4 3 3 3 0 4 4 4 0 3 4
+ 0 1 0 0 3 3 2 3 3 0 0 4 0 3 1 3 3 0 1 3 0 4 0 4 1 4 3 1 0 4 1 4 0 3 4 4 2 1 0 3 1 1 1 4 1 0 3 0 0 2 0 0 4 1 0
+
+VAL FROM POLY SQUARE
+
+F E L A D W G R F X U V W F Y W V Q B T R V A T S D F A W U I Y H V D X K W E Q U E A R L U U Q F Q B A N K Z L Y Q U V Z Q T P U F Q W H I K W E L D
+A H A D W Y C V Q V N A Y Z F A V W E K D L E W K I H W Q F U P T Q Z V U Q Y L Z K N A B Q F Q U U L R A E U Q E W K X D V H Y I U W A F D S T A V R
 
 
 
                 +-------------------------------+
-                |Removing periods
+                |Removing periods, offset 5
                 +-------------------------------+
-T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  r  b  e
-m  h  h  v  c  i  e  r  u  s  a  a  a  p  l  e  d  m  d  i  l  y  o  o  o  e  e  o  p  a  h  r  f  i  g  h  v  e  t  A
-m  n  s  l  i  e  n  s  m  a  h  b  g  r  c  n  n  a  h  a  a  t  o  s  e  s  a  a  u  m  o  t  o  f  h  h  T  r  i  e
-i  r  o  t  t  u  l  e  o  i  o  w  a  s  e  g  a  r  k  i  a  a  s  i  t  e  l  m  t  d  p  d  o  p  n  e  i  o  t  e
-a  n  d  m  s  o  e  g  e  a  o  r  h  h  d  a  h  h  d  p  a  a  h  a  o  e  r  u  m  n
-20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 18 2  5
-13 8  8  22 3  9  5  18 21 19 1  1  1  16 12 5  4  13 4  9  12 25 15 15 15 5  5  15 16 1  8  18 6  9  7  8  22 5  20 1
-13 14 19 12 9  5  14 19 13 1  8  2  7  18 3  14 14 1  8  1  1  20 15 19 5  19 1  1  21 13 15 20 15 6  8  8  20 18 9  5
-9  18 15 20 20 21 12 5  15 9  15 23 1  19 5  7  1  18 11 9  1  1  19 9  20 5  12 13 20 4  16 4  15 16 14 5  9  15 20 5
-1  14 4  13 19 15 5  7  5  1  15 18 8  8  4  1  8  8  4  16 1  1  8  1  15 5  18 21 13 14
+
+STRAIGHT FORWARD
+
+T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  r  b  e  m  h  h  v  c  i  e  r  u  s
+  b  g  r  c  n  n  a  h  a  a  t  o  s  e  s  a  a  u  m  o  t  o  f  h  h  T  r  i  e  i  r  o  t  t  u  l  e  o  i  o  w  a  s  e  g  a  r  k  i  a
+ a  h  a  o  e  r  u  m  n
+20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 18 2  5  13 8  8  22 3  9  5  18 21 19
+  2  7  18 3  14 14 1  8  1  1  20 15 19 5  19 1  1  21 13 15 20 15 6  8  8  20 18 9  5  9  18 15 20 20 21 12 5  15 9  15 23 1  19 5  7  1  18 11 9  1
+ 1  8  1  15 5  18 21 13 14
 
 REVERSED
 
-n  m  u  r  e  o  a  h  a  a  p  d  h  h  a  d  h  h  r  o  a  e  g  e  o  s  m  d  n  a  e  t  o  i  e  n  p  o  d  p
-d  t  m  l  e  t  i  s  a  a  i  k  r  a  g  e  s  a  w  o  i  o  e  l  u  t  t  o  r  i  e  i  r  T  h  h  f  o  t  o
-m  u  a  a  s  e  s  o  t  a  a  h  a  n  n  c  r  g  b  h  a  m  s  n  e  i  l  s  n  m  A  t  e  v  h  g  i  f  r  h
-a  p  o  e  e  o  o  o  y  l  i  d  m  d  e  l  p  a  a  a  s  u  r  e  i  c  v  h  h  m  e  b  r  l  d  e  i  a  i  l
-s  o  b  r  g  s  n  a  e  y  c  a  t  o  e  a  P  u  n  a  e  c  t  o  l  t  y  d  a  T
-14 13 21 18 5  15 1  8  1  1  16 4  8  8  1  4  8  8  18 15 1  5  7  5  15 19 13 4  14 1  5  20 15 9  5  14 16 15 4  16
-4  20 13 12 5  20 9  19 1  1  9  11 18 1  7  5  19 1  23 15 9  15 5  12 21 20 20 15 18 9  5  9  18 20 8  8  6  15 20 15
-13 21 1  1  19 5  19 15 20 1  1  8  1  14 14 3  18 7  2  8  1  13 19 14 5  9  12 19 14 13 1  20 5  22 8  7  9  6  18 8
-1  16 15 5  5  15 15 15 25 12 9  4  13 4  5  12 16 1  1  1  19 21 18 5  9  3  22 8  8  13 5  2  18 12 4  5  9  1  9  12
-19 15 2  18 7  19 14 1  5  25 3  1  20 15 5  1  16 21 14 1  5  3  20 15 12 20 25 4  1  20
+n  m  u  r  e  o  a  h  a  a  p  d  h  h  a  d  h  h  r  o  a  e  g  e  o  s  m  d  n  a  e  t  o  i  e  n  p  o  d  p  d  t  m  l  e  t  i  s  a  a
+  h  a  n  n  c  r  g  b  h  a  m  s  n  e  i  l  s  n  m  A  t  e  v  h  g  i  f  r  h  a  p  o  e  e  o  o  o  y  l  i  d  m  d  e  l  p  a  a  a  s
+ c  t  o  l  t  y  d  a  T
+14 13 21 18 5  15 1  8  1  1  16 4  8  8  1  4  8  8  18 15 1  5  7  5  15 19 13 4  14 1  5  20 15 9  5  14 16 15 4  16 4  20 13 12 5  20 9  19 1  1
+  8  1  14 14 3  18 7  2  8  1  13 19 14 5  9  12 19 14 13 1  20 5  22 8  7  9  6  18 8  1  16 15 5  5  15 15 15 25 12 9  4  13 4  5  12 16 1  1  1  1
+ 3  20 15 12 20 25 4  1  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 1 4 0 0 2 0 0 3 0 1 4 1 1 1 0 0 0 1 3 0 0 1 4 4 2 3 2 0 4 2 4 1 4 0 4 2 3 2 0 3 3 3 2 3 4 0 3 1 4 1 1 1 1 2 0 4 3 4 4 2 0 0 0 0 0 0 0 1 1 3 3 1 4 2
+ 1 3 1 4 1 1 4 4 0 0 2 3 0 4 1 4 0 1 4 0 4 0 0 0 1 4 4 3 4 0 0 2 0 1 0 3 3 3 4 1 3 3 4 1 1 1 3 1 0 0 3 1 3 4
+4 3 1 3 0 0 1 3 1 1 1 4 3 3 1 4 3 3 3 0 1 0 2 0 0 4 3 4 4 1 0 0 0 4 0 4 1 0 4 1 4 0 3 2 0 0 4 4 1 1 4 1 3 1 2 0 4 1 3 0 4 0 0 2 1 0 0 0 3 4 0 4 3 0 3
+ 1 1 1 1 4 1 3 0 4 3 2 3 3 3 0 2 3 2 4 0 4 1 4 2 4 0 2 3 2 4 4 1 0 0 3 1 0 0 0 1 1 1 4 1 0 3 0 0 2 0 0 4 1 0
+
+VAL FROM POLY SQUARE
+
+F E L A D W G B A R A W P O V X W V S C T O Y Q W G G C U Z C A A A G T W S C F Y P E Z I O S Y K I B V V G R A F T Q E U A F C V Q W L R W G Z A S V
+Y I A I G K T K T Q F L E U W A E E F W V S A Z G W R L W Q V C F A U E Q T F A R G V V B I K Y S O I Z E P Y F C S W T G A A A C Z U C G G W Q Y O T
 
 
 
                 +-------------------------------+
-                |Removing quotes
+                |Removing quotes, offset 5
                 +-------------------------------+
-T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  e  e  i
-e  e  e  e  T  z  r  s  t  g  r  t  s  o  y  l  b  e  o  r  i  t  f  o  u  d  k  f  r  r  a  m  i  o  o  m  e  d  h  o
-e  g  w  a  t  u  i  c  i  v  o  l  h  e  o  g  o  t  o  n  d  h  f  e  s  i  c  t  l  e  l  r  d  m  a  e  y  t  r  d
-a  s  y  g  j  o  t  f  t  b  o  g  a  y  e  w  i  o  k  f  r  a  t  i  m  z  e  s  i  o  e  t  d  i  m  t  y  f  b  e
-a  i  a  u  r  m  n  e  a  o  r  h  h  d  a  h  h  d  p  a  a  h  a  o  e  r  u  m  n
-20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 5  5  9
-5  5  5  5  20 26 18 19 20 7  18 20 19 15 25 12 2  5  15 18 9  20 6  15 21 4  11 6  18 18 1  13 9  15 15 13 5  4  8  15
-5  7  23 1  20 21 9  3  9  22 15 12 8  5  15 7  15 20 15 14 4  8  6  5  19 9  3  20 12 5  12 18 4  13 1  5  25 20 18 4
-1  19 25 7  10 15 20 6  20 2  15 7  1  25 5  23 9  15 11 6  18 1  20 9  13 26 5  19 9  15 5  20 4  9  13 20 25 6  2  5
-1  9  1  21 18 13 14 5  1  15 18 8  8  4  1  8  8  4  16 1  1  8  1  15 5  18 21 13 14
+
+STRAIGHT FORWARD
+
+T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  e  e  i  e  e  e  e  T  z  r  s  t  g
+  l  h  e  o  g  o  t  o  n  d  h  f  e  s  i  c  t  l  e  l  r  d  m  a  e  y  t  r  d  a  s  y  g  j  o  t  f  t  b  o  g  a  y  e  w  i  o  k  f  r
+ h  a  o  e  r  u  m  n
+20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 5  5  9  5  5  5  5  20 26 18 19 20 7
+5 12 8  5  15 7  15 20 15 14 4  8  6  5  19 9  3  20 12 5  12 18 4  13 1  5  25 20 18 4  1  19 25 7  10 15 20 6  20 2  15 7  1  25 5  23 9  15 11 6  1
+ 8  1  15 5  18 21 13 14
 
 REVERSED
 
-n  m  u  r  e  o  a  h  a  a  p  d  h  h  a  d  h  h  r  o  a  e  n  m  r  u  a  i  a  e  b  f  y  t  m  i  d  t  e  o
-i  s  e  z  m  i  t  a  r  f  k  o  i  w  e  y  a  g  o  b  t  f  t  o  j  g  y  s  a  d  r  t  y  e  a  m  d  r  l  e
-l  t  c  i  s  e  f  h  d  n  o  t  o  g  o  e  h  l  o  v  i  c  i  u  t  a  w  g  e  o  h  d  e  m  o  o  i  m  a  r
-r  f  k  d  u  o  f  t  i  r  o  e  b  l  y  o  s  t  r  g  t  s  r  z  T  e  e  e  e  i  e  e  l  d  e  i  a  i  l  s
-o  b  r  g  s  n  a  e  y  c  a  t  o  e  a  P  u  n  a  e  c  t  o  l  t  y  d  a  T
-14 13 21 18 5  15 1  8  1  1  16 4  8  8  1  4  8  8  18 15 1  5  14 13 18 21 1  9  1  5  2  6  25 20 13 9  4  20 5  15
-9  19 5  26 13 9  20 1  18 6  11 15 9  23 5  25 1  7  15 2  20 6  20 15 10 7  25 19 1  4  18 20 25 5  1  13 4  18 12 5
-12 20 3  9  19 5  6  8  4  14 15 20 15 7  15 5  8  12 15 22 9  3  9  21 20 1  23 7  5  15 8  4  5  13 15 15 9  13 1  18
-18 6  11 4  21 15 6  20 9  18 15 5  2  12 25 15 19 20 18 7  20 19 18 26 20 5  5  5  5  9  5  5  12 4  5  9  1  9  12 19
-15 2  18 7  19 14 1  5  25 3  1  20 15 5  1  16 21 14 1  5  3  20 15 12 20 25 4  1  20
+n  m  u  r  e  o  a  h  a  a  p  d  h  h  a  d  h  h  r  o  a  e  n  m  r  u  a  i  a  e  b  f  y  t  m  i  d  t  e  o  i  s  e  z  m  i  t  a  r  f
+  t  o  g  o  e  h  l  o  v  i  c  i  u  t  a  w  g  e  o  h  d  e  m  o  o  i  m  a  r  r  f  k  d  u  o  f  t  i  r  o  e  b  l  y  o  s  t  r  g  t
+ t  o  l  t  y  d  a  T
+14 13 21 18 5  15 1  8  1  1  16 4  8  8  1  4  8  8  18 15 1  5  14 13 18 21 1  9  1  5  2  6  25 20 13 9  4  20 5  15 9  19 5  26 13 9  20 1  18 6
+5 20 15 7  15 5  8  12 15 22 9  3  9  21 20 1  23 7  5  15 8  4  5  13 15 15 9  13 1  18 18 6  11 4  21 15 6  20 9  18 15 5  2  12 25 15 19 20 18 7  2
+ 20 15 12 20 25 4  1  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 1 4 0 0 2 0 0 3 0 1 4 1 1 1 0 0 0 1 3 0 0 1 4 4 2 3 2 0 4 2 4 1 4 0 4 2 0 0 4 0 0 0 0 0 1 3 4 0 2 3 0 4 0 0 2 2 0 0 3 4 0 1 0 1 4 1 1 3 3 1 3 4 0 0
+ 4 0 1 1 3 1 0 4 3 1 0 4 4 0 0 0 4 4 3 0 0 1 2 0 1 4 1 1 3 3 4 0 1 0 3 3 3 4 1 3 3 4 1 1 1 3 1 0 0 3 1 3 4
+4 3 1 3 0 0 1 3 1 1 1 4 3 3 1 4 3 3 3 0 1 0 4 3 3 1 1 4 1 0 2 1 0 0 3 4 4 0 0 0 4 4 0 1 3 4 0 1 3 1 1 0 4 3 0 0 1 2 0 2 0 1 0 0 0 2 0 4 1 4 3 0 0 0 1
+ 4 0 3 2 0 4 3 1 0 0 0 0 0 4 0 0 2 4 0 4 1 4 2 4 0 2 3 2 4 4 1 0 0 3 1 0 0 0 1 1 1 4 1 0 3 0 0 2 0 0 4 1 0
+
+VAL FROM POLY SQUARE
+
+F E L A D W G B A R A W P O V X W V C V A A F Y L D E L C Q E B W G T R E Q V D L I F U P L D L A V U B Z D C S U B A Y W L A F L L B Q E G I V I V E
+R Q B R G Y R Y T B E T G W C F D Z A E V I V I G E Q B L L F A L W Y A B U S C D Z B U V A L D L P U F I L D V Q E R T G W B E Q C L E D L Y F A A V
 
 
 
                 +-------------------------------+
-                |Removing colons
+                |Removing colons, offset 5
                 +-------------------------------+
-T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  e  e  i
-e  e  e  e  T  z  r  s  t  g  r  t  s  o  y  l  b  e  o  r  i  t  f  o  u  d  k  f  r  r  a  m  i  o  o  m  e  d  h  o
-e  g  w  a  t  u  i  c  i  v  o  l  h  e  o  g  o  t  o  n  d  h  f  e  s  i  c  t  l  e  l  r  d  m  a  e  y  t  r  d
-a  s  y  g  j  o  t  f  t  b  o  g  a  y  e  w  i  o  k  f  r  a  t  i  m  z  e  s  i  o  e  t  d  i  m  t  y  f  b  e
-a  i  a  u  r  m  n  e  a  o  r  h  h  d  a  h  h  d  p  a  a  h  a  o  e  r  u  m  n
-20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 5  5  9
-5  5  5  5  20 26 18 19 20 7  18 20 19 15 25 12 2  5  15 18 9  20 6  15 21 4  11 6  18 18 1  13 9  15 15 13 5  4  8  15
-5  7  23 1  20 21 9  3  9  22 15 12 8  5  15 7  15 20 15 14 4  8  6  5  19 9  3  20 12 5  12 18 4  13 1  5  25 20 18 4
-1  19 25 7  10 15 20 6  20 2  15 7  1  25 5  23 9  15 11 6  18 1  20 9  13 26 5  19 9  15 5  20 4  9  13 20 25 6  2  5
-1  9  1  21 18 13 14 5  1  15 18 8  8  4  1  8  8  4  16 1  1  8  1  15 5  18 21 13 14
+
+STRAIGHT FORWARD
+
+T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  e  e  i  e  e  e  e  T  z  r  s  t  g
+  l  h  e  o  g  o  t  o  n  d  h  f  e  s  i  c  t  l  e  l  r  d  m  a  e  y  t  r  d  a  s  y  g  j  o  t  f  t  b  o  g  a  y  e  w  i  o  k  f  r
+ h  a  o  e  r  u  m  n
+20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 5  5  9  5  5  5  5  20 26 18 19 20 7
+5 12 8  5  15 7  15 20 15 14 4  8  6  5  19 9  3  20 12 5  12 18 4  13 1  5  25 20 18 4  1  19 25 7  10 15 20 6  20 2  15 7  1  25 5  23 9  15 11 6  1
+ 8  1  15 5  18 21 13 14
 
 REVERSED
 
-n  m  u  r  e  o  a  h  a  a  p  d  h  h  a  d  h  h  r  o  a  e  n  m  r  u  a  i  a  e  b  f  y  t  m  i  d  t  e  o
-i  s  e  z  m  i  t  a  r  f  k  o  i  w  e  y  a  g  o  b  t  f  t  o  j  g  y  s  a  d  r  t  y  e  a  m  d  r  l  e
-l  t  c  i  s  e  f  h  d  n  o  t  o  g  o  e  h  l  o  v  i  c  i  u  t  a  w  g  e  o  h  d  e  m  o  o  i  m  a  r
-r  f  k  d  u  o  f  t  i  r  o  e  b  l  y  o  s  t  r  g  t  s  r  z  T  e  e  e  e  i  e  e  l  d  e  i  a  i  l  s
-o  b  r  g  s  n  a  e  y  c  a  t  o  e  a  P  u  n  a  e  c  t  o  l  t  y  d  a  T
-14 13 21 18 5  15 1  8  1  1  16 4  8  8  1  4  8  8  18 15 1  5  14 13 18 21 1  9  1  5  2  6  25 20 13 9  4  20 5  15
-9  19 5  26 13 9  20 1  18 6  11 15 9  23 5  25 1  7  15 2  20 6  20 15 10 7  25 19 1  4  18 20 25 5  1  13 4  18 12 5
-12 20 3  9  19 5  6  8  4  14 15 20 15 7  15 5  8  12 15 22 9  3  9  21 20 1  23 7  5  15 8  4  5  13 15 15 9  13 1  18
-18 6  11 4  21 15 6  20 9  18 15 5  2  12 25 15 19 20 18 7  20 19 18 26 20 5  5  5  5  9  5  5  12 4  5  9  1  9  12 19
-15 2  18 7  19 14 1  5  25 3  1  20 15 5  1  16 21 14 1  5  3  20 15 12 20 25 4  1  20
+n  m  u  r  e  o  a  h  a  a  p  d  h  h  a  d  h  h  r  o  a  e  n  m  r  u  a  i  a  e  b  f  y  t  m  i  d  t  e  o  i  s  e  z  m  i  t  a  r  f
+  t  o  g  o  e  h  l  o  v  i  c  i  u  t  a  w  g  e  o  h  d  e  m  o  o  i  m  a  r  r  f  k  d  u  o  f  t  i  r  o  e  b  l  y  o  s  t  r  g  t
+ t  o  l  t  y  d  a  T
+14 13 21 18 5  15 1  8  1  1  16 4  8  8  1  4  8  8  18 15 1  5  14 13 18 21 1  9  1  5  2  6  25 20 13 9  4  20 5  15 9  19 5  26 13 9  20 1  18 6
+5 20 15 7  15 5  8  12 15 22 9  3  9  21 20 1  23 7  5  15 8  4  5  13 15 15 9  13 1  18 18 6  11 4  21 15 6  20 9  18 15 5  2  12 25 15 19 20 18 7  2
+ 20 15 12 20 25 4  1  20
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+0 1 4 0 0 2 0 0 3 0 1 4 1 1 1 0 0 0 1 3 0 0 1 4 4 2 3 2 0 4 2 4 1 4 0 4 2 0 0 4 0 0 0 0 0 1 3 4 0 2 3 0 4 0 0 2 2 0 0 3 4 0 1 0 1 4 1 1 3 3 1 3 4 0 0
+ 4 0 1 1 3 1 0 4 3 1 0 4 4 0 0 0 4 4 3 0 0 1 2 0 1 4 1 1 3 3 4 0 1 0 3 3 3 4 1 3 3 4 1 1 1 3 1 0 0 3 1 3 4
+4 3 1 3 0 0 1 3 1 1 1 4 3 3 1 4 3 3 3 0 1 0 4 3 3 1 1 4 1 0 2 1 0 0 3 4 4 0 0 0 4 4 0 1 3 4 0 1 3 1 1 0 4 3 0 0 1 2 0 2 0 1 0 0 0 2 0 4 1 4 3 0 0 0 1
+ 4 0 3 2 0 4 3 1 0 0 0 0 0 4 0 0 2 4 0 4 1 4 2 4 0 2 3 2 4 4 1 0 0 3 1 0 0 0 1 1 1 4 1 0 3 0 0 2 0 0 4 1 0
+
+VAL FROM POLY SQUARE
+
+F E L A D W G B A R A W P O V X W V C V A A F Y L D E L C Q E B W G T R E Q V D L I F U P L D L A V U B Z D C S U B A Y W L A F L L B Q E G I V I V E
+R Q B R G Y R Y T B E T G W C F D Z A E V I V I G E Q B L L F A L W Y A B U S C D Z B U V A L D L P U F I L D V Q E R T G W B E Q C L E D L Y F A A V
 
 
 
@@ -425,38 +643,165 @@ o  b  r  g  s  n  a  e  y  c  a  t  o  e  a  P  u  n  a  e  c  t  o  l  t  y  d 
 
 
 +-------------------------------+
+|TEST TWO:
 |Trying to split on punctuation
 +-------------------------------+
                 +-------------------------------+
                 |Splitting on:  , and word counts in each phrase are:
                 +-------------------------------+
-7  18 17 9  22 15 10 16 20 15 4  7  10 19 20
+
+STRAIGHT FORWARD
+
 g  r  q  i  v  o  j  p  t  o  d  g  j  s  t
+7  18 17 9  22 15 10 16 20 15 4  7  10 19 20
+
+REVERSED
+
 t  s  j  g  d  o  t  p  j  o  v  i  q  r  g
+20 19 10 7  4  15 20 16 10 15 22 9  17 18 7
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+2 3 2 4 2 0 0 1 0 0 4 2 0 4 0
+0 4 0 2 4 0 0 1 0 0 2 4 2 3 2
+
+VAL FROM POLY SQUARE
+
+S X C F A P V
+V P A F C X S
 
 
 
                 +-------------------------------+
                 |Splitting on:  , . and word counts in each phrase are:
                 +-------------------------------+
-7  11 8  17 9  2  21 15 10 4  13 13 8  11 5  4  7  10 12 8  20 1
+
+STRAIGHT FORWARD
+
 g  k  h  q  i  b  u  o  j  d  m  m  h  k  e  d  g  j  l  h  t  a
+7  11 8  17 9  2  21 15 10 4  13 13 8  11 5  4  7  10 12 8  20 1
+
+REVERSED
+
 a  t  h  l  j  g  d  e  k  h  m  m  d  j  o  u  b  i  q  h  k  g
+1  20 8  12 10 7  4  5  11 8  13 13 4  10 15 21 2  9  17 8  11 7
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+2 1 3 2 4 2 1 0 0 4 3 3 3 1 0 4 2 0 2 3 0 1
+1 0 3 2 0 2 4 0 1 3 3 3 4 0 0 1 2 4 2 3 1 2
+
+VAL FROM POLY SQUARE
+
+H O P B V T I V C S F
+F S C V I T V B P O H
 
 
 
                 +-------------------------------+
                 |Splitting on:  , . " and word counts in each phrase are:
                 +-------------------------------+
-7  11 8  17 9  2  21 15 10 4  13 10 1  4  8  11 5  4  7  10 12 8  20 1
+
+STRAIGHT FORWARD
+
 g  k  h  q  i  b  u  o  j  d  m  j  a  d  h  k  e  d  g  j  l  h  t  a
+7  11 8  17 9  2  21 15 10 4  13 10 1  4  8  11 5  4  7  10 12 8  20 1
+
+REVERSED
+
 a  t  h  l  j  g  d  e  k  h  d  a  j  m  d  j  o  u  b  i  q  h  k  g
+1  20 8  12 10 7  4  5  11 8  4  1  10 13 4  10 15 21 2  9  17 8  11 7
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+2 1 3 2 4 2 1 0 0 4 3 0 1 4 3 1 0 4 2 0 2 3 0 1
+1 0 3 2 0 2 4 0 1 3 4 1 0 3 4 0 0 1 2 4 2 3 1 2
+
+VAL FROM POLY SQUARE
+
+H O P B V D W I V C S F
+F S C V I W D V B P O H
 
 
 
                 +-------------------------------+
                 |Splitting on:  , . " ' and word counts in each phrase are:
                 +-------------------------------+
-7  11 8  17 2  8  2  21 15 10 4  13 10 1  4  2  7  11 5  4  7  10 12 2  7  20 1
+
+STRAIGHT FORWARD
+
 g  k  h  q  b  h  b  u  o  j  d  m  j  a  d  b  g  k  e  d  g  j  l  b  g  t  a
+7  11 8  17 2  8  2  21 15 10 4  13 10 1  4  2  7  11 5  4  7  10 12 2  7  20 1
+
+REVERSED
+
 a  t  g  b  l  j  g  d  e  k  g  b  d  a  j  m  d  j  o  u  b  h  b  q  h  k  g
+1  20 7  2  12 10 7  4  5  11 7  2  4  1  10 13 4  10 15 21 2  8  2  17 8  11 7
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+2 1 3 2 2 3 2 1 0 0 4 3 0 1 4 2 2 1 0 4 2 0 2 2 2 0 1
+1 0 2 2 2 0 2 4 0 1 2 2 4 1 0 3 4 0 0 1 2 3 2 2 3 1 2
+
+VAL FROM POLY SQUARE
+
+H O S H A U F P H V C N C
+C N C V H P F U A H S O H
+
+
+
+
+
+
+
+
++-------------------------------+
+|TEST THREE:
+|Word length
++-------------------------------+
+
+STRAIGHT FORWARD
+
+
+4  4  3  1  4  7  7  3  2  3  9  7  2  1  6  2  8  3  7  2  4  4  2  6  5  4  3  5  2  7  7  5  3  4  3  6  2  3  7  10 7  8  5  4  2  5  4  5  7  7
+  9  6  8  21 2  2  8  3  3  2  6  4  3  2  5  5  4  2  5  5  5  4  2  7  7  4  3  8  6  3  10 2  8  2  8  4  4  9  11 5  3  3  4  3  11 4  3  5  7  4
+ 10 5  1  5  2  2  3  2  3  4  5  5  4  5
+
+REVERSED
+
+
+5  4  5  5  4  3  2  3  2  2  5  1  5  10 8  3  6  2  3  3  3  3  6  3  9  4  9  2  8  9  4  3  1  6  4  2  3  8  5  7  7  2  6  3  4  3  8  6  4  4
+  3  4  6  2  3  3  8  2  2  21 8  6  9  5  2  2  4  2  6  3  4  9  2  3  3  3  9  10 12 8  11 2  4  4  4  5  8  4  8  5  2  4  4  2  9  10 3  2  4  3
+ 1  2  7  9  3  2  3  7  7  4  1  3  4  4
+
+BASE64 DECODE
+
+Not valid base64 encoded string
+
+LETTER INDEX MOD 5
+
+4 4 3 1 4 2 2 3 2 3 4 2 2 1 1 2 3 3 2 2 4 4 2 1 0 4 3 0 2 2 2 0 3 4 3 1 2 3 2 0 2 3 0 4 2 0 4 0 2 2 1 0 4 4 3 4 2 3 0 4 2 4 4 2 0 3 4 3 0 4 4 4 2 1 3
+ 4 3 0 2 4 2 3 4 1 4 4 1 3 3 4 3 1 2 2 2 0 3 3 2 4 1 1 3 4 4 3 2 4 4 4 3 1 3 3 3 3 2 1 3 3 0 0 1 0 2 2 3 2 3 4 0 0 4 0
+0 4 0 0 4 3 2 3 2 2 0 1 0 0 3 3 1 2 3 3 3 3 1 3 4 4 4 2 3 4 4 3 1 1 4 2 3 3 0 2 2 2 1 3 4 3 3 1 4 4 1 4 3 2 4 2 0 3 4 1 3 4 3 3 0 1 4 4 4 3 2 3 2 0 3
+ 0 3 2 4 3 4 4 0 1 2 2 0 4 0 2 4 0 3 2 0 2 3 2 1 3 4 3 0 2 2 2 0 3 4 0 1 2 4 4 2 2 3 3 2 1 1 2 2 4 3 2 3 2 2 4 1 3 4 4
+
+VAL FROM POLY SQUARE
+
+Z I P S S P H M T N Z H V D N C Y I S C S V C E N B Z Y S V X P Q U V Z H O V T O Z I X N V R M S T H U C V C A P N U I D S S Z K Q Y I U L P Y W K T
+V E S S L F D R O T R U Z O Z R K O Q N M U T K W Y P L U I Y Q K Z S S D I U N P A C V C U H T S M R V N X I Z O T V O H Z V U Q P X V S Y Z B N E C

@@ -3,7 +3,7 @@ After watching this youtube documentary about the hoax of the polybius arcade ma
 
 https://www.youtube.com/watch?v=_7X6Yeydgyg
 
-In it, the youtuber finds some interesting information pointing towards the creation of the urban legend in 2000 by the owner of coinop.com to stir up traffic. Upon confronting him with the information, the owner says that the wording on the page is "very deliberate"
+In it, the youtuber finds some interesting information pointing towards the creation of the urban legend in 2000 by the owner of coinop.com to stir up traffic. Upon confronting him with the information, the owner says that the wording on the page is "very specific"
 
 The page in question is here: http://www.coinop.org/Game/103223/Polybius
 
