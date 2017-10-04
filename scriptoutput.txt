@@ -1,0 +1,238 @@
++-------------------------------+
+|Using Offset of: 16
++-------------------------------+
+                +-------------------------------+
+                |Original String
+                +-------------------------------+
+T  v  e     e  f  h  g  t  i  s  w  d     l  h  r  t  r  s  i  y  o  d  o  u  f  h  i  e     g  e     ,  e  c  p  a  n  s     e  c  m
+ e     a  u  f  h     m  k  s  i  z  h  e  a  r  m  n  u  i  c  w     a  r     e  u
+20 22 5  -64 5  6  8  7  20 9  19 23 4  -64 12 8  18 20 18 19 9  25 15 4  15 21 6  8  9  5  -64 7  5  -64 -52 5  3  16 1  14 19 -64 5
+ 3  13 5  -64 1  21 6  8  -64 13 11 19 9  26 8  5  1  18 13 14 21 9  3  23 -64 1  18 -64 5  21
+
+
+
+                +-------------------------------+
+                |Cutting whitespace
+                +-------------------------------+
+T  l  n  a  o  s  s  e  g  w  g  a  e  w  t  o  a  o  y  m  h  m  a  i  s  C  i  k  m  b  c  t  e  a  c  c  f  T  s  a  t  a  g  e  k
+ a  t  e  l  a  l  m  a  e  a  o  i  s  n  v  m
+20 12 14 1  15 19 19 5  7  23 7  1  5  23 20 15 1  15 25 13 8  13 1  9  19 3  9  11 13 2  3  20 5  1  3  3  6  20 19 1  20 1  7  5  11
+ 1  20 5  12 1  12 13 1  5  1  15 9  19 14 22 13
+
+
+
+                +-------------------------------+
+                |Removing commas
+                +-------------------------------+
+T  l  e  r  f  t  c  l  s  i  t  d  e  r  h  b  h  l  e  t  g  d  h  o  l  s  p  n  v  t  t  a  e  s  l  r  a  o  a  t  d  t  a  e  f
+ i  e  w  e  t  e  e  s  o  n  l  d  m  e  h
+20 12 5  18 6  20 3  12 19 9  20 4  5  18 8  2  8  12 5  20 7  4  8  15 12 19 16 14 22 20 20 1  5  19 12 18 1  15 1  20 4  20 1  5  6
+ 9  5  23 5  20 5  5  19 15 14 12 4  13 5  8
+
+
+
+                +-------------------------------+
+                |Removing periods
+                +-------------------------------+
+T  l  e  r  f  o  l  l  t  d  a  s  r  e  b  u  t  d  i  r  o  f  v  a  p  m  a  g  n  a  n  n  t  b  o  o  i  t  r  j  o  t  T  o  r
+ t  e  a  y  y  a  e  h  e  t  h  e  r  e  i
+20 12 5  18 6  15 12 12 20 4  1  19 18 5  2  21 20 4  9  18 15 6  22 1  16 13 1  7  14 1  14 14 20 2  15 15 9  20 18 10 15 20 20 15 18
+ 20 5  1  25 25 1  5  8  5  20 8  5  18 5  9
+
+
+
+                +-------------------------------+
+                |Removing quotes
+                +-------------------------------+
+T  l  e  r  f  o  l  l  t  d  a  s  t  t  i  t  i  e  n  y  u  p  i  l  e  e  y  h  g  r  o  a  h  l  m  d  s  s  a  c  t  a  a  n  f
+ m  t  i  g  o  a  s  W  p  n  h  f  d  b
+20 12 5  18 6  15 12 12 20 4  1  19 20 20 9  20 9  5  14 25 21 16 9  12 5  5  25 8  7  18 15 1  8  12 13 4  19 19 1  3  20 1  1  14 6
+ 13 20 9  7  15 1  19 23 16 14 8  6  4  2
+
+
+
+                +-------------------------------+
+                |Removing colons
+                +-------------------------------+
+T  l  e  r  f  o  l  l  t  d  a  s  t  t  i  t  i  e  n  y  u  p  i  l  e  e  y  h  g  r  o  a  h  l  m  d  s  s  a  c  t  a  a  n  f
+ m  t  i  g  o  a  s  W  p  n  h  f  d  b
+20 12 5  18 6  15 12 12 20 4  1  19 20 20 9  20 9  5  14 25 21 16 9  12 5  5  25 8  7  18 15 1  8  12 13 4  19 19 1  3  20 1  1  14 6
+ 13 20 9  7  15 1  19 23 16 14 8  6  4  2
+
+
+
++-------------------------------+
+|Using Offset of: 10
++-------------------------------+
+                +-------------------------------+
+                |Original String
+                +-------------------------------+
+T  h     e  e  a  r  a  f  .  o  s  c  e  l  f  s  o  d  y     f     r  h  o  h     b  m        i  p  v        m  e  o  u  k  o  b  o
+ n  m  e     m  i  a  k  i  m  n  e  e  d     w     t  t  s     t  o  l  r  t  e  e  r  q  r  ,  t  d  i  h  m  y  g  e  n  f  ,  i  o
+        w     d  g  r  o  c     o  a  m  e  c  e  m  n  m  h  p  e        e  b  a
+20 8  -64 5  5  1  18 1  6  -50 15 19 3  5  12 6  19 15 4  25 -64 6  -64 18 8  15 8  -64 2  13 -64 -64 9  16 22 -64 -64 13 5  15 21 11
+ 15 2  15 14 13 5  -64 13 9  1  11 9  13 14 5  5  4  -64 23 -64 20 20 19 -64 20 15 12 18 20 5  5  18 17 18 -52 20 4  9  8  13 25 7  5
+ 14 6  -52 9  15 -64 -64 23 -64 4  7  18 15 3  -64 15 1  13 5  3  5  13 14 13 8  16 5  -64 -64 5  2  1
+
+
+
+                +-------------------------------+
+                |Cutting whitespace
+                +-------------------------------+
+T  d  t  ,  a  c  b  l  s  s  u  e  s  s  u  h  g  a  ,  e  i  e  e  b  o  i  h  p  v  o  e  r  h  u  n  e  i  a  i  o  C  h  h  w  g
+ n  o  h  c  n  h  a  o  e  l  o  c  c  t  s  o  e  r  n  t  i  n  h  l  a  d  i  a  t  m  e  k  y  e  a  l  e  i  o  d  h  c  n  o  d
+  h  d  a  h  o  r  m
+20 4  20 -52 1  3  2  12 19 19 21 5  19 19 21 8  7  1  -52 5  9  5  5  2  15 9  8  16 22 15 5  18 8  21 14 5  9  1  9  15 3  8  8  23
+7  14 15 8  3  14 8  1  15 5  12 15 3  3  20 19 15 5  18 14 20 9  14 8  12 1  4  9  1  20 13 5  11 25 5  1  12 5  9  15 4  8  3  14 15
+ 4  8  4  1  8  15 18 13
+
+
+
+                +-------------------------------+
+                |Removing commas
+                +-------------------------------+
+T  d  t  o  c  a  u  a  t  g  d  e  f  o  h  p  t  t  u  m  a  t  t  r  b  m  t  e  p  i  m  c  g  o  r  b  d  a  d  o  s  i  e  a  e
+ n  n  .  t  o  a  o  g  n  s  t  r  o  n  e  s  t  h  s  d  o  t  p  g  r  i  a  i  e  m  d  d  p  e  o  e  n  m  o  g  t  e  t  l  c
+  p  r  o  v  o  i
+20 4  20 15 3  1  21 1  20 7  4  5  6  15 8  16 20 20 21 13 1  20 20 18 2  13 20 5  16 9  13 3  7  15 18 2  4  1  4  15 19 9  5  1  5
+ 14 14 -50 20 15 1  15 7  14 19 20 18 15 14 5  19 20 8  19 4  15 20 16 7  18 9  1  9  5  13 4  4  16 5  15 5  14 13 15 7  20 5  20 12
+3  16 18 15 22 15 9
+
+
+
+                +-------------------------------+
+                |Removing periods
+                +-------------------------------+
+T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  b  m  h  c  e  u  a  a  l  d  d  l  o  o  e  p  h  f  g  v  t  m  s  i  n  m
+ h  g  c  n  h  a  o  e  a  u  o  o  h  T  i  i  o  t  l  o  o  a  e  a  k  a  s  t  l  t  p  o  n  i  t  a  d  s  e  e  o  h  d  h  d
+  a  h  o  r  m
+20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 2  13 8  3  5  21 1  1  12 4  4  12 15 15 5  16 8  6  7  22 20 13 19 9  14 13
+ 8  7  3  14 8  1  15 5  1  21 15 15 8  20 9  9  15 20 12 15 15 1  5  1  11 1  19 20 12 20 16 15 14 9  20 1  4  19 5  5  15 8  4  8  4
+  1  8  15 18 13
+
+
+
+                +-------------------------------+
+                |Removing quotes
+                +-------------------------------+
+T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  e  e  e  T  r  t  r  s  y  b  o  i  f  u  k  r  a  i  o  e  h  e  w  t  i  i
+ o  h  o  o  o  d  f  s  c  l  l  d  a  y  r  a  y  j  t  t  o  a  e  i  k  r  t  m  e  i  e  d  m  y  b  a  a  r  n  a  r  h  a  h  p
+  a  a  e  u  n
+20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 5  5  5  20 18 20 18 19 25 2  15 9  6  21 11 18 1  9  15 5  8  5  23 20 9  9
+ 15 8  15 15 15 4  6  19 3  12 12 4  1  25 18 1  25 10 20 20 15 1  5  9  11 18 20 13 5  9  5  4  13 25 2  1  1  18 14 1  18 8  1  8  1
+6 1  1  5  21 14
+
+
+
+                +-------------------------------+
+                |Removing colons
+                +-------------------------------+
+T  d  t  o  c  a  u  a  o  a  y  a  s  r  o  l  a  e  l  e  e  e  T  r  t  r  s  y  b  o  i  f  u  k  r  a  i  o  e  h  e  w  t  i  i
+ o  h  o  o  o  d  f  s  c  l  l  d  a  y  r  a  y  j  t  t  o  a  e  i  k  r  t  m  e  i  e  d  m  y  b  a  a  r  n  a  r  h  a  h  p
+  a  a  e  u  n
+20 4  20 15 3  1  21 1  15 1  25 1  19 18 15 12 1  5  12 5  5  5  20 18 20 18 19 25 2  15 9  6  21 11 18 1  9  15 5  8  5  23 20 9  9
+ 15 8  15 15 15 4  6  19 3  12 12 4  1  25 18 1  25 10 20 20 15 1  5  9  11 18 20 13 5  9  5  4  13 25 2  1  1  18 14 1  18 8  1  8  1
+6 1  1  5  21 14
+
+
+
++-------------------------------+
+|Using Offset of: 5
++-------------------------------+
+                +-------------------------------+
+                |Original String
+                +-------------------------------+
+T  g  h        t  e  e  e  t  a  t  r  s  a  u  f  t  .     o  f  s  e  c  y  e  e  l  n  f  a  s  e  o  o  d  o  y  t     s  f  a
+ d  r  b  h  n  o  e  h  i
+  b  r  m  a           t  i  s  p  l  v  e           e  m  a  e  f  o  o  u  s  k  o  o  t  b  i  o  c  n  o  m  v  e  r     o  m  n
+i  h  a  i  k     i  s  m     n  r  e  h  e  A  d  t     a  w  a     d  t  e  t     s  y     k  t  u  o  o  l  "  r  f  t  a  e  h  e
+    r  d  q  e  r  t  ,  y  t  l  d  o  i  b  h  h  m  s  y
+  g  w  e  l  n  i  f  t  ,  t  i  i  o  u     e     k  w  l     t  d  y  g     r     o  e  c  a        o     a  o  m  n  e  c  c  o
+e     m  i  n     m  e  h     p  d  e  m     o     n  e  a  b  t  a  .
+20 7  8  -64 -64 20 5  5  5  20 1  20 18 19 1  21 6  20 -50 -64 15 6  19 5  3  25 5  5  12 14 6  1  19 5  15 15 4  15 25 20 -64 19 6
+1  -64 4  18 2  8  14 15 5  8  9  -64 -86 2  18 13 1  -64 -64 -64 20 9  19 16 12 22 5  -64 -64 -64 5  13 1  5  6  15 15 21 19 11 15 15
+ 20 2  9  15 3  14 15 13 22 5  18 -64 15 13 14 9  8  1  9  11 -64 9  19 13 -64 14 18 5  8  5  1  4  20 -64 1  23 1  -64 4  20 5  20 -6
+4 19 25 -64 11 20 21 15 15 12 -62 18 6  20 1  5  8  5  -64 18 4  17 5  18 20 -52 25 20 12 4  15 9  2  8  8  13 19 25 -86 7  23 5  12 1
+4 9  6  20 -52 20 9  9  15 21 -64 5  -64 11 23 12 -64 20 4  25 7  -64 18 -64 15 5  3  1  -64 -64 15 -64 1  15 13 14 5  3  3  15 5  -64
+ 13 9  14 -64 13 5  8  -64 16 4  5  13 -64 15 -64 14 5  1  2  20 1  -50
+
+
+
+                +-------------------------------+
+                |Cutting whitespace
+                +-------------------------------+
+T  a  d  y  t  l  ,  r  a  t  c  i  b  f  l  T  s  o  s  i  u  h  e  l  s  r  s  e  u  k  h  y  g  n  a  w  ,  d  e  e  i  e  e  e  e
+ c  b  r  o  o  i  e  h  w  p  d  v  e  o  n  e  i  r  h  h  r  u  o  n  r  e  b  i  d  a  a  i  d  o  o  C  s  h  k  h  y  w  p  g  r
+  n  v  o  l  h  e  c  n  n  a  h  a  a  t  o  s  e  y  l  o  o  o  c  c  c  "  t  c  s  y  o  e  e  u  r  n  n  e  t  e  i  m  n  t
+h  e  l  .  a  s  d  i  i  a  a  a  t  i  m  z  e  s  k  h  y  s  e  y  a  n  l  e  e  a  i  i  o  c  d  s  h  W  c  c  n  s  o  i  d
+ a  h  h  d  p  a  a  h  a  o  e  r  u  m  n
+20 1  4  25 20 12 -52 18 1  20 3  9  2  6  12 20 19 15 19 9  21 8  5  12 19 18 19 5  21 11 8  25 7  14 1  23 -52 4  5  5  9  5  5  5
+5  3  2  18 15 15 9  5  8  23 16 4  22 5  15 14 5  9  18 8  8  18 21 15 14 18 5  2  9  4  1  1  9  4  15 15 3  19 8  11 8  25 23 16 7
+ 18 14 22 15 12 8  5  3  14 14 1  8  1  1  20 15 19 5  25 12 15 15 15 3  3  3  -62 20 3  19 25 15 5  5  21 18 14 14 5  20 5  9  13 14
+20 8  5  12 -50 1  19 4  9  9  1  1  1  20 9  13 26 5  19 11 8  25 19 5  25 1  14 12 5  5  1  9  9  15 3  4  19 8  23 3  3  14 19 15 9
+  4  1  8  8  4  16 1  1  8  1  15 5  18 21 13 14
+
+
+
+                +-------------------------------+
+                |Removing commas
+                +-------------------------------+
+T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  h  t  f  g  s  d  r  e  i  f  n  o  a  h  d  p  d  t  s  t  r  u  t  m  h  a  w  t  i  t
+ e  r  m  b  h  m  t  t  u  e  e  p  s  i  w  m  a  c  s  g  u  o  n  r  e  b  i  d  a  a  i  d  o  o  C  s  h  i  o  e  o  a  h  e  g
+  n  r  n  m  .  r  t  p  o  r  a  e  o  t  g  g  n  k  s  d  t  l  r  d  o  m  n  h  e  n  s  n  t  r  h  h  s  l  d  r  o  u  t  m
+p  d  g  a  r  k  i  a  a  s  i  t  e  l  m  t  d  p  d  o  p  n  e  i  o  t  e  a  n  d  m  s  o  e  g  v  t  d  e  w  t  n  l  t  c
+ s  p  d  r  t  o  o  v  a  o  e  i
+20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  8  20 6  7  19 4  18 5  9  6  14 15 1  8  4  16 4  20 19 20 18 21 20 13 8  1  23 20 9  20
+ 5  18 13 2  8  13 20 20 21 5  5  16 19 9  23 13 1  3  19 7  21 15 14 18 5  2  9  4  1  1  9  4  15 15 3  19 8  9  15 5  15 1  8  5  7
+  14 18 14 13 -50 18 20 16 15 18 1  5  15 20 7  7  14 11 19 4  20 12 18 4  15 13 14 8  5  14 19 14 20 18 8  8  19 12 4  18 15 21 20 13
+ 16 4  7  1  18 11 9  1  1  19 9  20 5  12 13 20 4  16 4  15 16 14 5  9  15 20 5  1  14 4  13 19 15 5  7  22 20 4  5  23 20 14 12 20 3
+  19 16 4  18 20 15 15 22 1  15 5  9
+
+
+
+                +-------------------------------+
+                |Removing periods
+                +-------------------------------+
+T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  r  b  e  m  h  h  v  c
+ i  e  r  u  s  a  a  a  p  l  e  d  m  d  i  l  y  o  o  o  e  e  o  p  a  h  r  f  i  g  h  v  e  t  A  m  n  s  l  i  e  n  s  m  a
+  h  b  g  r  c  n  n  a  h  a  a  t  o  s  e  s  a  a  u  m  o  t  o  f  h  h  T  r  i  e  i  r  o  t  t  u  l  e  o  i  o  w  a  s
+e  g  a  r  k  i  a  a  s  i  t  e  l  m  t  d  p  d  o  p  n  e  i  o  t  e  a  n  d  m  s  o  e  g  e  a  o  r  h  h  d  a  h  h  d
+ p  a  a  h  a  o  e  r  u  m  n
+20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 18 2  5  13 8  8  22 3
+ 9  5  18 21 19 1  1  1  16 12 5  4  13 4  9  12 25 15 15 15 5  5  15 16 1  8  18 6  9  7  8  22 5  20 1  13 14 19 12 9  5  14 19 13 1
+  8  2  7  18 3  14 14 1  8  1  1  20 15 19 5  19 1  1  21 13 15 20 15 6  8  8  20 18 9  5  9  18 15 20 20 21 12 5  15 9  15 23 1  19
+5  7  1  18 11 9  1  1  19 9  20 5  12 13 20 4  16 4  15 16 14 5  9  15 20 5  1  14 4  13 19 15 5  7  5  1  15 18 8  8  4  1  8  8  4
+ 16 1  1  8  1  15 5  18 21 13 14
+
+
+
+                +-------------------------------+
+                |Removing quotes
+                +-------------------------------+
+T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  e  e  i  e  e  e  e  T
+ z  r  s  t  g  r  t  s  o  y  l  b  e  o  r  i  t  f  o  u  d  k  f  r  r  a  m  i  o  o  m  e  d  h  o  e  g  w  a  t  u  i  c  i  v
+  o  l  h  e  o  g  o  t  o  n  d  h  f  e  s  i  c  t  l  e  l  r  d  m  a  e  y  t  r  d  a  s  y  g  j  o  t  f  t  b  o  g  a  y
+e  w  i  o  k  f  r  a  t  i  m  z  e  s  i  o  e  t  d  i  m  t  y  f  b  e  a  i  a  u  r  m  n  e  a  o  r  h  h  d  a  h  h  d  p
+ a  a  h  a  o  e  r  u  m  n
+20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 5  5  9  5  5  5  5  20
+ 26 18 19 20 7  18 20 19 15 25 12 2  5  15 18 9  20 6  15 21 4  11 6  18 18 1  13 9  15 15 13 5  4  8  15 5  7  23 1  20 21 9  3  9  2
+2 15 12 8  5  15 7  15 20 15 14 4  8  6  5  19 9  3  20 12 5  12 18 4  13 1  5  25 20 18 4  1  19 25 7  10 15 20 6  20 2  15 7  1  25
+5  23 9  15 11 6  18 1  20 9  13 26 5  19 9  15 5  20 4  9  13 20 25 6  2  5  1  9  1  21 18 13 14 5  1  15 18 8  8  4  1  8  8  4  16
+ 1  1  8  1  15 5  18 21 13 14
+
+
+
+                +-------------------------------+
+                |Removing colons
+                +-------------------------------+
+T  a  d  y  t  l  o  t  c  e  a  n  u  P  a  e  o  t  a  c  y  e  a  n  s  g  r  b  o  s  l  i  a  i  e  d  l  e  e  i  e  e  e  e  T
+ z  r  s  t  g  r  t  s  o  y  l  b  e  o  r  i  t  f  o  u  d  k  f  r  r  a  m  i  o  o  m  e  d  h  o  e  g  w  a  t  u  i  c  i  v
+  o  l  h  e  o  g  o  t  o  n  d  h  f  e  s  i  c  t  l  e  l  r  d  m  a  e  y  t  r  d  a  s  y  g  j  o  t  f  t  b  o  g  a  y
+e  w  i  o  k  f  r  a  t  i  m  z  e  s  i  o  e  t  d  i  m  t  y  f  b  e  a  i  a  u  r  m  n  e  a  o  r  h  h  d  a  h  h  d  p
+ a  a  h  a  o  e  r  u  m  n
+20 1  4  25 20 12 15 20 3  5  1  14 21 16 1  5  15 20 1  3  25 5  1  14 19 7  18 2  15 19 12 9  1  9  5  4  12 5  5  9  5  5  5  5  20
+ 26 18 19 20 7  18 20 19 15 25 12 2  5  15 18 9  20 6  15 21 4  11 6  18 18 1  13 9  15 15 13 5  4  8  15 5  7  23 1  20 21 9  3  9  2
+2 15 12 8  5  15 7  15 20 15 14 4  8  6  5  19 9  3  20 12 5  12 18 4  13 1  5  25 20 18 4  1  19 25 7  10 15 20 6  20 2  15 7  1  25
+5  23 9  15 11 6  18 1  20 9  13 26 5  19 9  15 5  20 4  9  13 20 25 6  2  5  1  9  1  21 18 13 14 5  1  15 18 8  8  4  1  8  8  4  16
+ 1  1  8  1  15 5  18 21 13 14
+
