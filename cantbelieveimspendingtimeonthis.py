@@ -1,6 +1,10 @@
 import collections
 import base64
 
+##############################################
+# FUNCTIONS
+##############################################
+
 ClearText = collections.namedtuple("ClearText", ["String","Number","ModFive", "Poly"])
 
 # given a character, convert to the numeric form (a->1, b->2, etc)
@@ -103,6 +107,9 @@ def printHead(heading, indent=True):
     print frontchar + "|"+heading
     print frontchar + "+-------------------------------+"
 
+##############################################
+# Globals
+##############################################
 # The special text in question
 text = """This game had a very limited release, one or two backwater arcades in a suburb of Portland. The history of this game is cloudy, there were all kinds of strange stories about how kids who played it got amnesia afterwards, couldn't remember their name or where they lived, etc.
 The bizarre rumors about this game are that it was supposedly developed by some kind of weird military tech offshoot group, used some kind of proprietary behavior modification algorithms developed for the CIA or something, kids who played it woke up at night screaming, having horrible nightmares.
@@ -110,6 +117,9 @@ The bizarre rumors about this game are that it was supposedly developed by some 
 According to an operator who ran an arcade with one of these games, guys in black coats would come to collect "records" from the machines. They're not interested in quarters or anything, they just collected information about how the game was played.
 
 The game was weird looking, kind of abstract, fast action with some puzzle elements, the kids who played it stopped playing games entirely, one of them became a big anti videogame crusader or something. We've contacted one person who met him, and he claims the machines disappeard after a month or so and no one ever heard about them again."""
+
+# Test phrase
+#text = "Iaaa aCbb bbant hjn sgjktsdghbyu adepeabl ieii eilgril lq i v ease ei zmv"
 
 ##############################################
 # TEST ONE:
