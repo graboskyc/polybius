@@ -4,8 +4,13 @@ ClearText = collections.namedtuple("ClearText", ["String","Number"])
 
 # given a character, convert to the numeric form (a->1, b->2, etc)
 # based on ascii table
-def convertToOrd(char):
+def convertCharToOrd(char):
     return str(ord(char.lower()) - 96)
+
+# given a number, convert to alpha form (1-->a, 2-->b, etc)
+# based on ascii table
+def convertOrdToChar(num):
+    return chr(num+96)
 
 #given a full text, find every nth character
 def printEvery(text, offset):
@@ -17,7 +22,7 @@ def printEvery(text, offset):
             i = 0
         if(i == 0):
             retStr.append(char.ljust(2))
-            retNum.append(convertToOrd(char).ljust(2))
+            retNum.append(convertCharToOrd(char).ljust(2))
         i = i + 1
     r = ClearText(retStr, retNum)
     
@@ -93,6 +98,9 @@ for offset in offsetList:
     printEvery(cleanText, offset)
     print "\r\n\r\n"
 
+# see if theres anything hidden by punctuation partitioning
+# convert number of words in a phrase splut by punctuation characters
+# and convert that to letter of alphabet
 print "\r\n\r\n\r\n\r\n"
 printHead("Trying to split on punctuation", False)
 
@@ -104,6 +112,12 @@ for char in splitChars:
     splitText = splitText.replace(char,"||")
     textArray = splitText.split("||")
     printHead("Splitting on: " + usedChars + " and word counts in each phrase are:")
+    phraseCounterNum = ""
+    phraseCounterChar = ""
     for phrase in textArray:
-        print len(phrase.split(" ")),
+        phraseCounterNum = phraseCounterNum + str(len(phrase.split(" "))).ljust(2) + " "
+        phraseCounterChar = phraseCounterChar + convertOrdToChar(len(phrase.split(" "))).ljust(2) + " "
+    print phraseCounterNum.strip()
+    print phraseCounterChar.strip()
+    print "".join(reversed(phraseCounterChar.strip()))
     print "\r\n\r\n"

@@ -430,22 +430,33 @@ o  b  r  g  s  n  a  e  y  c  a  t  o  e  a  P  u  n  a  e  c  t  o  l  t  y  d 
                 +-------------------------------+
                 |Splitting on:  , and word counts in each phrase are:
                 +-------------------------------+
-7 18 17 9 22 15 10 16 20 15 4 7 10 19 20
+7  18 17 9  22 15 10 16 20 15 4  7  10 19 20
+g  r  q  i  v  o  j  p  t  o  d  g  j  s  t
+t  s  j  g  d  o  t  p  j  o  v  i  q  r  g
+
 
 
                 +-------------------------------+
                 |Splitting on:  , . and word counts in each phrase are:
                 +-------------------------------+
-7 11 8 17 9 2 21 15 10 4 13 13 8 11 5 4 7 10 12 8 20 1
+7  11 8  17 9  2  21 15 10 4  13 13 8  11 5  4  7  10 12 8  20 1
+g  k  h  q  i  b  u  o  j  d  m  m  h  k  e  d  g  j  l  h  t  a
+a  t  h  l  j  g  d  e  k  h  m  m  d  j  o  u  b  i  q  h  k  g
+
 
 
                 +-------------------------------+
                 |Splitting on:  , . " and word counts in each phrase are:
                 +-------------------------------+
-7 11 8 17 9 2 21 15 10 4 13 10 1 4 8 11 5 4 7 10 12 8 20 1
+7  11 8  17 9  2  21 15 10 4  13 10 1  4  8  11 5  4  7  10 12 8  20 1
+g  k  h  q  i  b  u  o  j  d  m  j  a  d  h  k  e  d  g  j  l  h  t  a
+a  t  h  l  j  g  d  e  k  h  d  a  j  m  d  j  o  u  b  i  q  h  k  g
+
 
 
                 +-------------------------------+
                 |Splitting on:  , . " ' and word counts in each phrase are:
                 +-------------------------------+
-7 11 8 17 2 8 2 21 15 10 4 13 10 1 4 2 7 11 5 4 7 10 12 2 7 20 1
+7  11 8  17 2  8  2  21 15 10 4  13 10 1  4  2  7  11 5  4  7  10 12 2  7  20 1
+g  k  h  q  b  h  b  u  o  j  d  m  j  a  d  b  g  k  e  d  g  j  l  b  g  t  a
+a  t  g  b  l  j  g  d  e  k  g  b  d  a  j  m  d  j  o  u  b  h  b  q  h  k  g
