@@ -21,6 +21,8 @@ def printEvery(text, offset):
         i = i + 1
     r = ClearText(retStr, retNum)
     
+    # print out the string, the number of letter in alphabet
+    # then do the same as above but reverse each
     print " ".join(r.String)
     print " ".join(r.Number)
     print "\r\nREVERSED\r\n"
@@ -43,6 +45,7 @@ def printHead(heading, indent=True):
     print frontchar + "|"+heading
     print frontchar + "+-------------------------------+"
 
+# The special text in question
 text = """This game had a very limited release, one or two backwater arcades in a suburb of Portland. The history of this game is cloudy, there were all kinds of strange stories about how kids who played it got amnesia afterwards, couldn't remember their name or where they lived, etc.
 The bizarre rumors about this game are that it was supposedly developed by some kind of weird military tech offshoot group, used some kind of proprietary behavior modification algorithms developed for the CIA or something, kids who played it woke up at night screaming, having horrible nightmares.
 
@@ -88,4 +91,19 @@ for offset in offsetList:
     replaceList = (":",";")
     cleanText = replaceStr(cleanText, replaceList)
     printEvery(cleanText, offset)
+    print "\r\n\r\n"
+
+print "\r\n\r\n\r\n\r\n"
+printHead("Trying to split on punctuation", False)
+
+splitChars = (",",".","\"","'")
+splitText = text
+usedChars = ""
+for char in splitChars:
+    usedChars = usedChars + " " + char
+    splitText = splitText.replace(char,"||")
+    textArray = splitText.split("||")
+    printHead("Splitting on: " + usedChars + " and word counts in each phrase are:")
+    for phrase in textArray:
+        print len(phrase.split(" ")),
     print "\r\n\r\n"
